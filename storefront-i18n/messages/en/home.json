@@ -1,0 +1,133 @@
+{
+  "categories": {
+    "furniture": {
+      "label": "Solid wood",
+      "name": "Furniture"
+    },
+    "lighting": {
+      "label": "Warm light",
+      "name": "Lighting"
+    },
+    "outdoor": {
+      "label": "Garden",
+      "name": "Outdoor"
+    },
+    "comingSoonBadge": "Coming soon",
+    "saleBadge": "Spring Sale ✨"
+  },
+  "sections": {
+    "furniture": {
+      "eyebrow": "SOLID WOOD",
+      "title": "Furniture for every room"
+    },
+    "lighting": {
+      "eyebrow": "WARM LIGHT",
+      "title": "Lighting that sets the mood"
+    },
+    "outdoor": {
+      "eyebrow": "GARDEN",
+      "title": "Outdoor & solar lighting"
+    }
+  },
+  "stockBadge": {
+    "inStock": "In stock",
+    "preorder": "Pre-order"
+  },
+  "trade": {
+    "tag": "Project enquiries",
+    "title": "Hotels, showrooms, and projects with specific requirements",
+    "description": "We put together offers for large quantities, product combinations, and projects where you need installation recommendations or fitting advice.",
+    "cta": "Request a custom quote",
+    "newPrefix": "NEW!",
+    "whatsappMessage": "Hello! I have a project and I'd like a personalised Acme Store quote.",
+    "emailSubject": "Custom quote request",
+    "emailBody": "Hello,\n\nI have a project and I'd like to receive a personalised Acme Store quote.\n\nThank you."
+  },
+  "trust": [
+    {
+      "icon": "🛡️",
+      "title": "Premium materials",
+      "description": "Acme Store products are made from carefully selected materials — solid wood, quality glass and brass."
+    },
+    {
+      "icon": "🚚",
+      "title": "Fast delivery",
+      "description": "Fast delivery across the United Kingdom. Pay by card (Apple Pay, Google Pay, Visa, Mastercard)."
+    },
+    {
+      "icon": "🛠️",
+      "title": "24-month guarantee",
+      "description": "All Acme Store products come with a 24-month guarantee and installation support."
+    },
+    {
+      "icon": "🔒",
+      "title": "100% secure payment",
+      "description": "Pay by card via Revolut: Apple Pay, Google Pay, Visa, Mastercard. Encrypted processing."
+    }
+  ],
+  "spring": {
+    "title": "SPRING SALE 2026",
+    "subtitle": "Welcome spring with discounts that make a real difference"
+  },
+  "about": {
+    "eyebrow": "ABOUT US",
+    "title": "Why Acme Store?",
+    "description": "We're a team passionate about design and quality, selecting only premium products for your home — with real support before and after your order.",
+    "cta": "Learn more about us →",
+    "values": {
+      "support": {
+        "title": "Dedicated support",
+        "desc": "Email or phone — we're here to help."
+      },
+      "quality": {
+        "title": "Verified quality",
+        "desc": "Every product meets strict selection criteria."
+      },
+      "passion": {
+        "title": "Genuine passion",
+        "desc": "We only choose what truly deserves a place in your home."
+      }
+    }
+  },
+  "trademark": {
+    "label": "Acme Store® — Registered trademark OSIM",
+    "validUntil": "Valid until"
+  },
+  "returnPolicy": {
+    "title": "14-day returns — no questions asked",
+    "description": "Not satisfied? Return the product without any explanation or penalty. Simple.",
+    "cta": "View returns policy"
+  },
+  "hero": {
+    "saleEyebrow": "LIMITED OFFER",
+    "saleTitle": "SPRING SALE 2026",
+    "saleSub": "Welcome spring with discounts that make a real difference",
+    "slides": [
+      {
+        "alt": "Styled bedroom with an oak nightstand",
+        "label": "Spring Sale 2026",
+        "sublabel": "Real discounts across the collection",
+        "cta": "Shop now"
+      },
+      {
+        "alt": "Opal glass table lamp on a sideboard",
+        "label": "Lighting that sets the mood",
+        "sublabel": "Dimmable lamps in glass & brass",
+        "cta": "View lighting"
+      },
+      {
+        "alt": "Solar path lights lining a garden path at dusk",
+        "label": "Solar garden lighting",
+        "sublabel": "Wire-free, dusk-to-dawn",
+        "cta": "View outdoor"
+      },
+      {
+        "alt": "White and oak console table in a hallway",
+        "label": "Furniture in solid oak",
+        "sublabel": "Minimal pieces, built to last",
+        "cta": "View furniture"
+      }
+    ],
+    "dotAria": "Go to slide {n}"
+  }
+}

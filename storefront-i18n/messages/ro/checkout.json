@@ -1,0 +1,90 @@
+{
+  "pageTitle": "Finalizare comandă",
+  "emptyCart": {
+    "title": "Coșul tău e gol",
+    "hint": "Adaugă produse Acme Store pentru a continua"
+  },
+  "steps": {
+    "email": "📧 Emailul tău",
+    "emailDone": "📧 Email",
+    "shipping": "📦 Adresa de livrare",
+    "payment": "💳 Plată"
+  },
+  "edit": "Modifică",
+  "editShipping": "Editează",
+  "emailIntro": "Salvăm emailul ca să-ți trimitem confirmarea comenzii și actualizările de livrare. Completezi restul detaliilor la pasul următor.",
+  "fields": {
+    "emailRequired": "Email *",
+    "emailPlaceholder": "ion@email.ro",
+    "billingType": "Tip facturare",
+    "individual": "Persoană fizică",
+    "company": "Persoană juridică",
+    "companyName": "Nume firmă *",
+    "companyNamePlaceholder": "SC Exemplu SRL",
+    "companyCui": "CUI / CIF *",
+    "companyCuiPlaceholder": "RO12345678",
+    "companyRegCom": "Nr. Reg. Com. *",
+    "companyRegComPlaceholder": "J40/12345/2020",
+    "firstName": "Prenume *",
+    "firstNamePlaceholder": "Ion",
+    "lastName": "Nume *",
+    "lastNamePlaceholder": "Popescu",
+    "phone": "Telefon *",
+    "phonePlaceholder": "+40 7xx xxx xxx",
+    "address": "Adresă *",
+    "addressPlaceholder": "Str. Exemplu nr. 10, bl. A, sc. 1, ap. 5",
+    "city": "Oraș *",
+    "cityPlaceholder": "București",
+    "county": "Județ *",
+    "countyPlaceholder": "Ilfov",
+    "country": "Țară *",
+    "postalCode": "Cod poștal *",
+    "postalCodePlaceholder": "012345",
+    "useAltShipping": "Livrează la altă adresă",
+    "altAddressTitle": "Adresa de livrare",
+    "altAddressPlaceholder": "Str. Exemplu nr. 10"
+  },
+  "actions": {
+    "savingEmail": "Se salvează…",
+    "continueEmail": "Continuă →",
+    "continueToPayment": "Continuă către plată →",
+    "processing": "Se procesează...",
+    "rambursLong": "Plata ramburs (la livrare) — {total}",
+    "confirmRamburs": "Confirmă comanda ramburs — {total}"
+  },
+  "summary": {
+    "title": "📋 Sumar comandă",
+    "subtotal": "Subtotal",
+    "welcomeDiscount": "🎁 Reducere de bun venit (-{percent}%)",
+    "couponBadge": "Cod aplicat",
+    "couponLine": "{code} (-{percent}%)",
+    "couponMismatch": "Codul tău <strong>{code}</strong> e legat de un alt email ({email}). Folosește același email la livrare ca să se aplice reducerea de {percent}%.",
+    "shipping": "Livrare",
+    "shippingFree": "Gratuită",
+    "shippingFreeNote": "(gratuită peste {amount})",
+    "total": "Total",
+    "shippingSummaryDeliverTo": "Livrare la:",
+    "shippingSummaryCompany": "CUI: {cui} · Reg. Com.: {regcom}"
+  },
+  "payment": {
+    "selectMethod": "Alege metoda de plată",
+    "online": "Plată online",
+    "onlineMeta": "Card / Revolut Pay",
+    "ramburs": "Plată ramburs",
+    "rambursMeta": "La livrare",
+    "rambursNote": "Achiti la curier după ce comanda ajunge la adresa de livrare.",
+    "or": "sau",
+    "title": "Plată"
+  },
+  "errors": {
+    "invalidEmail": "Introdu o adresă de email validă.",
+    "verifyShipping": "Verifică datele de livrare.",
+    "orderProcessing": "Eroare la procesarea comenzii",
+    "generic": "A apărut o eroare. Încearcă din nou."
+  },
+  "unavailable": {
+    "title": "Comenzi indisponibile pentru această piață",
+    "body": "Comenzile pentru această piață nu sunt încă disponibile. Comandă pe domeniul românesc pentru a finaliza o achiziție.",
+    "cta": "Înapoi la pagina principală"
+  }
+}

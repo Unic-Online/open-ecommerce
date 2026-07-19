@@ -1,0 +1,133 @@
+/* ============================================================
+   Acme Store — Theme: Default (Light Luxury / Bioluminescent)
+   ============================================================
+   This file is the ENTIRE theme. To switch themes, change the
+   @import in globals.css to point to another theme file.
+
+   Drop-in alternate themes:
+     @import '../styles/theme-warm.css'   — Warm Amber Luxury
+     @import '../styles/theme-mono.css'   — Minimal Monochrome
+
+   Token groups defined here:
+     1. Backgrounds
+     2. Accent / Glow palette  (+ RGB channels for rgba() alpha variants)
+     3. Text
+     4. Price comparison
+     5. Spacing scale
+     6. Typography
+     7. Borders & Radius
+     8. Shadows
+     9. Layout
+     10. Borders (alpha)
+     11. Primary button
+     12. Drawer surface
+     13. WhatsApp button
+     14. Star rating
+   ============================================================ */
+
+:root {
+  /* 1. Backgrounds */
+  --bg-deep: #f5f6f8;
+  --bg-card: rgba(255, 255, 255, 0.88);
+  --bg-card-hover: rgba(255, 255, 255, 0.96);
+  --bg-surface: #edeef1;
+  --bg-elevated: #ffffff;
+
+  /* 2. Accent colors — glow palette */
+  --glow-turquoise: #e74c3c;
+  --glow-blue: #3a66e0;
+  --glow-green: #1a9955;
+  --glow-violet: #8a3bd9;
+  --glow-turquoise-dim: rgba(231, 76, 60, 0.1);
+  --glow-blue-dim: rgba(58, 102, 224, 0.1);
+  --glow-green-dim: rgba(26, 153, 85, 0.1);
+  --glow-gold: #D4820A;
+  --glow-gold-dim: rgba(212, 130, 10, 0.1);
+
+  /* RGB channels — use for rgba(var(--accent-rgb), alpha) so a theme
+     swap needs to change only this one value. */
+  --accent-rgb: 231, 76, 60;
+  --accent-dark-rgb: 192, 57, 43;
+
+  /* Accent dark (used as gradient end-stop and hover/focus tint) */
+  --accent-dark: #c0392b;
+
+  /* 3. Text */
+  --text-primary: #1a1d24;
+  --text-secondary: #4a5060;
+  --text-muted: #8690a2;
+  --text-accent: var(--glow-turquoise);
+
+  /* 4. Price comparison */
+  --price-old: #5e5e5e;
+  --price-new: #b03325;
+
+  /* 5. Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+
+  /* 6. Typography */
+  --font-display: var(--font-jost), system-ui, sans-serif;
+  --font-body: var(--font-jost), system-ui, sans-serif;
+
+  /* 7. Borders & Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* 8. Shadows */
+  --shadow-glow-turquoise: 0 2px 12px rgba(var(--accent-rgb), 0.12);
+  --shadow-glow-blue: 0 2px 12px rgba(58, 102, 224, 0.12);
+  --shadow-glow-green: 0 2px 12px rgba(26, 153, 85, 0.12);
+  --shadow-glow-gold: 0 2px 12px rgba(212, 130, 10, 0.12);
+
+  /* 9. Layout */
+  --max-width: 1200px;
+  --content-padding: 1.25rem;
+
+  /* 10. Borders (alpha) */
+  --border-subtle: rgba(0, 0, 0, 0.07);
+  --border-medium: rgba(0, 0, 0, 0.12);
+  --overlay-bg: rgba(0, 0, 0, 0.3);
+
+  /* 11. Primary button */
+  --gradient-primary: linear-gradient(135deg, var(--glow-turquoise), var(--accent-dark));
+  --text-on-primary: #ffffff;
+  --shadow-primary: 0 4px 20px rgba(var(--accent-rgb), 0.3);
+  --shadow-primary-hover: 0 8px 30px rgba(var(--accent-rgb), 0.45);
+
+  /* 12. Mobile drawer surface */
+  --bg-drawer: #ffffff;
+
+  /* 13. WhatsApp button */
+  --whatsapp-start: #25D366;
+  --whatsapp-end: #128C7E;
+  --whatsapp-rgb: 37, 211, 102;
+  --gradient-whatsapp: linear-gradient(135deg, var(--whatsapp-start), var(--whatsapp-end));
+  --shadow-whatsapp: 0 4px 20px rgba(var(--whatsapp-rgb), 0.3);
+  --shadow-whatsapp-hover: 0 8px 30px rgba(var(--whatsapp-rgb), 0.45);
+
+  /* 14. Star rating */
+  --star-color: #fbbf24;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --content-padding: 2rem;
+    --space-xl: 5rem;
+    --space-2xl: 7rem;
+    --space-3xl: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --content-padding: 3rem;
+  }
+}

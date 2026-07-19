@@ -1,0 +1,25 @@
+{
+  "usefulLinks": "Link-uri utile",
+  "links": {
+    "home": "Acasă",
+    "despreNoi": "Despre noi",
+    "shop": "Magazin",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "legal": "Legal",
+  "legalLinks": {
+    "termsConditions": "Termeni și condiții",
+    "privacy": "Politica de confidențialitate",
+    "returns": "Politica de retur",
+    "howToOrder": "Cum comand?",
+    "returnForm": "Formular de retur"
+  },
+  "newsletter": "Abonează-te la newsletter!",
+  "odrTitle": "Soluționarea online a litigiilor",
+  "odrSub": "Detalii",
+  "anpcTitle": "ANPC — Soluționarea alternativă a litigiilor",
+  "anpcSub": "Detalii",
+  "copyright": "Copyright © {year} <strong>Acme Store</strong> — Toate drepturile rezervate.",
+  "signature": "Made with love in Romania."
+}

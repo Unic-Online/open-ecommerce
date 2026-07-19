@@ -1,0 +1,37 @@
+.cartBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.cartBtn:hover {
+  color: var(--glow-turquoise);
+  border-color: rgba(var(--accent-rgb), 0.2);
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glow-turquoise);
+  color: var(--text-on-primary);
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 100px;
+  font-family: var(--font-body);
+}

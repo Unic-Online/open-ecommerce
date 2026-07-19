@@ -1,0 +1,69 @@
+{
+  "addToCart": "Adaugă în coș",
+  "inStock": "În Stoc",
+  "preOrder": "Precomandă",
+  "soon": "În curând",
+  "page": {
+    "breadcrumbAria": "Navigare",
+    "headings": {
+      "videoReviews": "Recenzii video",
+      "description": "Descriere",
+      "customerReviews": "Recenzii clienți",
+      "crossSell": "Alți clienți au cumpărat",
+      "popular": "Produse populare",
+      "faq": "Întrebări frecvente"
+    },
+    "categoryShort": {
+      "furniture": "Mobilier",
+      "lighting": "Iluminat",
+      "outdoor": "Exterior"
+    }
+  },
+  "buybox": {
+    "addToCart": "Adaugă în coș",
+    "added": "Adăugat ✓",
+    "discountBadge": "{percent}% Reducere",
+    "dimensionLabel": "Dimensiune completă",
+    "deliveryNotice": "Dacă comanzi acum, livrăm {date}.",
+    "deliveryHelper": "Data este estimativă și se aplică doar produselor aflate în stoc. Termenul de {days} zile se calculează doar în zile lucrătoare.",
+    "helpHello": "Salut, sunt ",
+    "helpAfter": "! Dacă ai nevoie de ajutorul meu mă poți apela oricând la ",
+    "helpOr": " sau îmi poți da un mail pe ",
+    "supportAria": "Suport clienți",
+    "supportAlt": "{name} - asistență clienți",
+    "qtyDecrease": "Scade",
+    "qtyIncrease": "Crește",
+    "paymentSecure": "Plată 100% sigură,",
+    "paymentVia": "prin Revolut",
+    "categoriesLabel": "Categorii:",
+    "shareLabel": "Distribuie",
+    "shareFacebook": "Distribuie pe Facebook",
+    "shareWhatsapp": "Distribuie pe WhatsApp",
+    "shareTelegram": "Distribuie pe Telegram",
+    "shareEmail": "Distribuie prin Email",
+    "ratingAria": "Rating {rating} din 5 stele",
+    "ratingValue": "{rating} din 5",
+    "ratingCount": "({count, plural, one {# recenzie} other {# recenzii}})"
+  },
+  "upsell": {
+    "badge": {
+      "furniture": "Vezi modelul premium",
+      "lighting": "Vezi modelul mai mare",
+      "outdoor": "Vezi modelul premium"
+    },
+    "priceDiff": "+ {amount} față de {name}"
+  },
+  "floatingBar": {
+    "addToCart": "Adaugă în coș",
+    "added": "Adăugat ✓"
+  },
+  "gallery": {
+    "thumbAria": "Imagine {n}: {label}",
+    "expandAria": "Mărește imaginea {n}",
+    "dotAria": "Mergi la imaginea {n}",
+    "lightboxAria": "Galerie produs — vizualizare mărită",
+    "lightboxClose": "Închide galeria",
+    "lightboxPrev": "Imaginea anterioară",
+    "lightboxNext": "Imaginea următoare"
+  }
+}

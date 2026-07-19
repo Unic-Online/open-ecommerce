@@ -1,0 +1,133 @@
+{
+  "categories": {
+    "furniture": {
+      "label": "Lemn masiv",
+      "name": "Mobilier"
+    },
+    "lighting": {
+      "label": "Lumină caldă",
+      "name": "Iluminat"
+    },
+    "outdoor": {
+      "label": "Grădină",
+      "name": "Exterior"
+    },
+    "comingSoonBadge": "În curând",
+    "saleBadge": "Spring sale ✨"
+  },
+  "sections": {
+    "furniture": {
+      "eyebrow": "LEMN MASIV",
+      "title": "Mobilier pentru orice cameră"
+    },
+    "lighting": {
+      "eyebrow": "LUMINĂ CALDĂ",
+      "title": "Iluminat care creează atmosferă"
+    },
+    "outdoor": {
+      "eyebrow": "GRĂDINĂ",
+      "title": "Iluminat exterior și solar"
+    }
+  },
+  "stockBadge": {
+    "inStock": "În Stoc",
+    "preorder": "Precomandă"
+  },
+  "trade": {
+    "tag": "Consultanță proiecte",
+    "title": "HoReCa, showroom-uri și amenajări cu cerințe speciale",
+    "description": "Pregătim oferte pentru cantități mari, combinații de produse și proiecte unde ai nevoie de recomandări de aplicare sau montaj.",
+    "cta": "Cere ofertă personalizată",
+    "newPrefix": "NOU!",
+    "whatsappMessage": "Bună! Am un proiect și aș vrea o ofertă personalizată Acme Store.",
+    "emailSubject": "Cerere ofertă personalizată",
+    "emailBody": "Bună,\n\nAm un proiect și aș vrea o ofertă personalizată Acme Store.\n\nMulțumesc."
+  },
+  "trust": [
+    {
+      "icon": "🛡️",
+      "title": "Materiale premium",
+      "description": "Produsele Acme Store sunt realizate din materiale selectate cu grijă — lemn masiv, sticlă și alamă de calitate."
+    },
+    {
+      "icon": "🚚",
+      "title": "Livrare rapidă",
+      "description": "Curier rapid în toată România. Plată ramburs, card online sau transfer bancar."
+    },
+    {
+      "icon": "🛠️",
+      "title": "Garanție 24 luni",
+      "description": "Toate produsele Acme Store vin cu 24 luni garanție și suport pentru instalare."
+    },
+    {
+      "icon": "🔒",
+      "title": "Plată 100% sigură",
+      "description": "Plată cu cardul prin Revolut: Apple Pay, Google Pay, Visa, Mastercard. Procesare criptată."
+    }
+  ],
+  "spring": {
+    "title": "SPRING SALE 2026",
+    "subtitle": "Întâmpină primăvara cu reduceri care fac diferența"
+  },
+  "about": {
+    "eyebrow": "DESPRE NOI",
+    "title": "De ce Acme Store?",
+    "description": "Suntem o echipă pasionată de design și calitate care selectează doar produse premium pentru casa ta — cu suport real, înainte și după comandă.",
+    "cta": "Află mai multe despre noi →",
+    "values": {
+      "support": {
+        "title": "Suport dedicat",
+        "desc": "Email, telefon sau WhatsApp — suntem mereu aici."
+      },
+      "quality": {
+        "title": "Calitate verificată",
+        "desc": "Fiecare produs trece prin criterii stricte."
+      },
+      "passion": {
+        "title": "Pasiune reală",
+        "desc": "Alegem doar ce merită locul din casa ta."
+      }
+    }
+  },
+  "trademark": {
+    "label": "Acme Store® — Marcă înregistrată OSIM",
+    "validUntil": "Valabil până în"
+  },
+  "returnPolicy": {
+    "title": "Retur în 14 zile — indiferent de motiv",
+    "description": "Nu ești mulțumit? Returnezi produsul fără explicații și fără penalități. Simplu.",
+    "cta": "Vezi politica de retur"
+  },
+  "hero": {
+    "saleEyebrow": "OFERTĂ LIMITATĂ",
+    "saleTitle": "SPRING SALE 2026",
+    "saleSub": "Întâmpină primăvara cu reduceri care fac diferența",
+    "slides": [
+      {
+        "alt": "Dormitor amenajat cu o noptieră din stejar",
+        "label": "Spring Sale 2026",
+        "sublabel": "Reduceri reale la întreaga colecție",
+        "cta": "Cumpără acum"
+      },
+      {
+        "alt": "Lampă de masă din sticlă opal pe o comodă",
+        "label": "Iluminat care creează atmosferă",
+        "sublabel": "Lămpi dimabile din sticlă și alamă",
+        "cta": "Vezi iluminatul"
+      },
+      {
+        "alt": "Stâlpi solari de alee la apus",
+        "label": "Iluminat solar de grădină",
+        "sublabel": "Fără fire, de la apus la răsărit",
+        "cta": "Vezi exteriorul"
+      },
+      {
+        "alt": "Consolă alb cu stejar într-un hol",
+        "label": "Mobilier din stejar masiv",
+        "sublabel": "Piese minimaliste, făcute să dureze",
+        "cta": "Vezi mobilierul"
+      }
+    ],
+    "dotAria": "Mergi la slide {n}"
+  }
+}

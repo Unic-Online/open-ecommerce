@@ -1,0 +1,304 @@
+.page {
+  padding: 2.5rem 1.25rem 4rem;
+  min-height: calc(100vh - 64px);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page h1 {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: 1.8rem;
+  margin: 0 0 1.5rem;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.empty h1 {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem;
+}
+
+.empty p {
+  color: #666;
+  margin: 0 0 1.5rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.imageWrap {
+  width: 80px;
+  height: 80px;
+  background: #f6f6f6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  min-width: 0;
+}
+
+.name {
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.unit {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.qtyControl {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.qtyControl button {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+.qtyControl button:hover {
+  background: #f0f0f0;
+}
+
+.qtyControl span {
+  min-width: 32px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.remove {
+  background: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+}
+
+.remove:hover {
+  color: var(--glow-turquoise);
+}
+
+.summaryRows {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #666;
+  font-size: 0.95rem;
+  padding: 0.3rem 0;
+}
+
+.shippingProgress {
+  margin: 0.8rem 0 0.2rem;
+  padding: 0.8rem;
+  background: #f0fbf8;
+  border: 1px solid #cfeee5;
+  border-radius: 8px;
+}
+
+.progressTrack {
+  height: 8px;
+  overflow: hidden;
+  background: #dbe8e4;
+  border-radius: 999px;
+}
+
+.progressFill {
+  display: block;
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: inherit;
+}
+
+.shippingProgress p {
+  margin: 0.45rem 0 0;
+  color: #35524c;
+  font-size: 0.88rem;
+}
+
+.shippingProgress strong {
+  color: #067467;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 1rem 0 1.5rem;
+  border-top: 2px solid #1a1a1a;
+}
+
+.checkoutBtn {
+  display: block;
+  text-align: center;
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.checkoutBtn:hover {
+  background: #333;
+}
+
+@media (max-width: 600px) {
+  .row {
+    grid-template-columns: 60px 1fr auto;
+    gap: 0.6rem;
+  }
+
+  .imageWrap {
+    width: 60px;
+    height: 60px;
+  }
+
+  .remove {
+    grid-column: 3;
+  }
+
+  .qtyControl {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    justify-self: start;
+  }
+}
+
+/* ---------- Upsell card ---------- */
+.upsell {
+  margin: 1.2rem 0 0.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #fff8f0 0%, #fff4f7 100%);
+  border: 1px solid #f0e0e6;
+  border-radius: 10px;
+}
+
+.upsellTitle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin: 0 0 0.75rem;
+}
+
+.upsellCard {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.upsellImageWrap {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  background: #f6f6f6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.upsellImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upsellInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.upsellName {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #1a1a1a;
+  margin: 0 0 0.15rem;
+}
+
+.upsellTagline {
+  font-size: 0.78rem;
+  color: #777;
+  margin: 0 0 0.35rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.upsellPrices {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.upsellOldPrice {
+  font-size: 0.78rem;
+  color: var(--price-old);
+  text-decoration: line-through;
+}
+
+.upsellPrice {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--price-new);
+}
+
+.upsellBtn {
+  flex-shrink: 0;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.upsellBtn:hover {
+  background: #333;
+  transform: translateY(-1px);
+}

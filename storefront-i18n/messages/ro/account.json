@@ -1,0 +1,41 @@
+{
+  "login": {
+    "eyebrow": "CONT",
+    "pageTitle": "Contul tău Acme Store",
+    "pageSubtitle": "Conectează-te cu emailul folosit la comandă. Îți trimitem un link pentru autentificare — fără parolă.",
+    "title": "Conectare",
+    "emailLabel": "Adresă de email",
+    "emailPlaceholder": "exemplu@email.ro",
+    "submit": "Trimite link de conectare",
+    "sending": "Se trimite…",
+    "linkSent": "✓ Verifică-ți emailul. Ți-am trimis un link de conectare.",
+    "linkSentHint": "Linkul este valabil 15 minute. Dacă nu ajunge, verifică folderul Spam.",
+    "hint": "Dacă emailul nu există în baza noastră de date, nu vei primi niciun mesaj.",
+    "errorInvalidLink": "Linkul de conectare este invalid sau a expirat. Cere unul nou.",
+    "errorRateLimited": "Prea multe cereri. Încearcă din nou peste o oră.",
+    "errorGeneric": "Nu am putut trimite linkul. Încearcă din nou."
+  },
+  "dashboard": {
+    "eyebrow": "CONT",
+    "title": "Bun venit",
+    "subtitle": "Comenzile tale și istoricul cumpărăturilor.",
+    "hello": "Salut",
+    "loggedIn": "Autentificat",
+    "logout": "Deconectare",
+    "loggingOut": "Se deconectează…",
+    "ordersHeading": "Comenzile tale",
+    "emptyOrders": "Încă nu ai plasat nicio comandă pe acest email.",
+    "totalLabel": "Total",
+    "viewOrder": "Vezi comanda",
+    "leaveReview": "Lasă o recenzie",
+    "reviewAfterDelivery": "Vei putea lăsa o recenzie după ce comanda este livrată.",
+    "status": {
+      "received": "Primită",
+      "pending_payment": "Plată în curs",
+      "paid": "Plătită",
+      "cancelled": "Anulată",
+      "failed": "Eșuată",
+      "refunded": "Rambursată"
+    }
+  }
+}

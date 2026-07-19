@@ -1,0 +1,25 @@
+{
+  "usefulLinks": "Useful links",
+  "links": {
+    "home": "Home",
+    "despreNoi": "About us",
+    "shop": "Shop",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "legal": "Legal",
+  "legalLinks": {
+    "termsConditions": "Terms and conditions",
+    "privacy": "Privacy policy",
+    "returns": "Returns policy",
+    "howToOrder": "How to order",
+    "returnForm": "Return form"
+  },
+  "newsletter": "Subscribe to our newsletter!",
+  "odrTitle": "Online dispute resolution",
+  "odrSub": "Find out more",
+  "anpcTitle": "ANPC — Alternative dispute resolution",
+  "anpcSub": "Find out more",
+  "copyright": "Copyright © {year} <strong>Acme Store</strong> — All rights reserved.",
+  "signature": "Designed with passion."
+}

@@ -1,0 +1,41 @@
+{
+  "login": {
+    "eyebrow": "ACCOUNT",
+    "pageTitle": "Your Acme Store account",
+    "pageSubtitle": "Sign in with the email address you used at checkout. We send you a link — no password needed.",
+    "title": "Sign in",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "name@email.com",
+    "submit": "Send me a sign-in link",
+    "sending": "Sending…",
+    "linkSent": "✓ Check your email. We've sent you a sign-in link.",
+    "linkSentHint": "The link is valid for 15 minutes. If you can't see it, check your Spam folder.",
+    "hint": "If the email address isn't recognised, you won't receive any message.",
+    "errorInvalidLink": "The sign-in link is invalid or has expired. Please request a new one.",
+    "errorRateLimited": "Too many attempts. Please try again in an hour.",
+    "errorGeneric": "Unable to send the link. Please try again."
+  },
+  "dashboard": {
+    "eyebrow": "ACCOUNT",
+    "title": "Welcome",
+    "subtitle": "Your orders and purchase history.",
+    "hello": "Hello",
+    "loggedIn": "Signed in",
+    "logout": "Sign out",
+    "loggingOut": "Signing out…",
+    "ordersHeading": "Your orders",
+    "emptyOrders": "No orders have been placed with this email address yet.",
+    "totalLabel": "Total",
+    "viewOrder": "View order",
+    "leaveReview": "Leave a review",
+    "reviewAfterDelivery": "You'll be able to leave a review once your order has been delivered.",
+    "status": {
+      "received": "Received",
+      "pending_payment": "Payment pending",
+      "paid": "Paid",
+      "cancelled": "Cancelled",
+      "failed": "Failed",
+      "refunded": "Refunded"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "storefront-i18n",
+  "version": "0.1.0",
+  "private": true,
+  "browserslist": {
+    "production": [">0.5%", "last 2 years", "not dead", "not op_mini all"],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "sync-docs": "node scripts/sync-docs.mjs",
+    "check-docs": "node scripts/sync-docs.mjs --check",
+    "revolut:webhook": "node scripts/revolut-webhook.mjs",
+    "backfill:currency": "node scripts/backfill-order-currency.mjs",
+    "orders:validator": "node scripts/orders-schema-validator.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug"
+  },
+  "dependencies": {
+    "@grafana/faro-web-sdk": "^2.4.0",
+    "@grafana/faro-web-tracing": "^2.4.0",
+    "@revolut/checkout": "^1.1.25",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "mongodb": "^7.1.1",
+    "next": "16.2.1",
+    "next-intl": "^4.11.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "resend": "^6.10.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "jsdom": "^29.0.1",
+    "typescript": "^5",
+    "vitest": "^4.1.2"
+  }
+}

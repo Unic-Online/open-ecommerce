@@ -1,0 +1,19 @@
+{
+  "notConfigured": "Card payment is not configured — missing",
+  "walletNotice": "Enter your delivery address to activate Revolut Pay, Apple Pay, and Google Pay.",
+  "dividerOrCard": "or pay by card",
+  "cardHintNoShipping": "Enter your delivery address to pay by card.",
+  "cardHintIdle": "Click to open the secure form and pay by card.",
+  "cardHintReady": "Details are locked for this payment session. If you change your basket, the form will be reset.",
+  "cardHintPreparing": "Preparing the secure card payment form...",
+  "processing": "Processing...",
+  "payCard": "Pay {total} by card",
+  "errors": {
+    "shippingRequired": "Please enter your delivery address before paying.",
+    "cannotInitiate": "Unable to initiate payment.",
+    "revolutPayFailed": "Revolut Pay payment failed.",
+    "walletFailed": "Wallet payment failed.",
+    "cardFailed": "Card payment failed.",
+    "completeAddressAndWait": "Please complete your address and wait for the form to load."
+  }
+}

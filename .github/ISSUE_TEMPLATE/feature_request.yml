@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose an improvement or new capability
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: template
+    attributes:
+      label: Template
+      options:
+        - storefront-single
+        - storefront-i18n
+        - both
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do that the template makes hard?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like it to work? PRs are welcome after discussion.

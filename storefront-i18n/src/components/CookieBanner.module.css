@@ -1,0 +1,210 @@
+/* ============================================================
+   CookieBanner — symmetric Accept/Decline (GDPR-compliant)
+   Brand-pink Accept, neutral outlined Decline; equal sizes.
+   ============================================================ */
+
+.wrap {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 1000;
+  padding: 0.75rem;
+  pointer-events: none;
+  font-family: var(--font-body), -apple-system, sans-serif;
+}
+
+.panel {
+  pointer-events: auto;
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.title {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.text {
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Mobile: keep "Refuză" + "Personalizează" side-by-side on one row, with
+   "Acceptă tot" full-width below. Desktop (>=600px) collapses this with
+   display:contents so all three buttons sit on the same flex row inside
+   .actions. */
+.actionsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.actionsRow > .btn {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* All buttons share the same height, padding, font-weight and width.
+   Visual differentiation is by colour only — symmetric per GDPR/EDPB
+   guidance on dark-pattern button design. On narrow screens we stack
+   to give each label room (e.g. "Personalizează" without overflow). */
+.btn {
+  width: 100%;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.75rem 1rem;
+  min-height: 44px;
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.btnPrimary {
+  background: var(--gradient-primary);
+  color: var(--text-on-primary);
+  box-shadow: 0 4px 14px rgba(var(--accent-rgb), 0.28);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.4);
+}
+
+.btnGhost {
+  background: #ffffff;
+  color: #1a1a1a;
+  border-color: #d8d8d8;
+}
+
+.btnGhost:hover {
+  border-color: #1a1a1a;
+  background: #fafafa;
+}
+
+/* ---------- Customize panel ---------- */
+.toggleList {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.toggleItem {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.toggleHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.toggleName {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.alwaysOn {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1a8a4a;
+  background: rgba(26, 138, 74, 0.1);
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+}
+
+.toggleInput {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-dark);
+  cursor: pointer;
+}
+
+.toggleDesc {
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .panel {
+    padding: 1.4rem 1.6rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .text {
+    font-size: 0.88rem;
+  }
+
+  /* Desktop has room for a side-by-side row; equal flex-basis keeps the
+     buttons visually identical regardless of label length. */
+  .actions {
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+
+  .btn {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  /* On desktop the mobile sub-row vanishes — its children become direct
+     flex children of .actions, restoring the symmetric three-across row. */
+  .actionsRow {
+    display: contents;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    padding: 1.25rem;
+  }
+}

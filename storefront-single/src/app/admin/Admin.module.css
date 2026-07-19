@@ -1,0 +1,944 @@
+/* ============================================================
+   Acme Store — Admin
+   Same design system as the storefront (src/styles/theme.css):
+   --bg-deep canvas, white elevated cards, Jost, coral accent.
+   Operational restraint: the accent is reserved for focus,
+   links and primary actions; data stays neutral.
+   ============================================================ */
+
+.shell {
+  min-height: 100vh;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+/* --- Top chrome --- */
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.barInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.6rem var(--content-padding);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  min-height: 44px;
+  align-items: center;
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.brandTag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--glow-turquoise);
+  background: var(--glow-turquoise-dim);
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-basis: 100%;
+  order: 3;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin: 0 calc(-1 * var(--content-padding));
+  padding: 0 var(--content-padding) 0.4rem;
+}
+
+.navLinks::-webkit-scrollbar {
+  display: none;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--glow-turquoise);
+  background: rgba(var(--accent-rgb), 0.06);
+}
+
+.barSpacer {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .barInner {
+    flex-wrap: nowrap;
+  }
+  .navLinks {
+    flex-basis: auto;
+    order: 0;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.logoutBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 1rem;
+  background: transparent;
+  border: 1px solid var(--border-medium);
+  color: var(--text-secondary);
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.logoutBtn:hover {
+  border-color: var(--glow-turquoise);
+  color: var(--glow-turquoise);
+  background: rgba(var(--accent-rgb), 0.04);
+}
+
+/* --- Page scaffold --- */
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem var(--content-padding) 4rem;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding-top: 2rem;
+  }
+}
+
+.heading {
+  margin: 0.5rem 0 1.25rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 3.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+/* Section marker — echoes the storefront's glow-divider + eyebrow */
+.subheading {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 2.25rem 0 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.subheading::before {
+  content: '';
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--glow-turquoise), transparent);
+  flex-shrink: 0;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: var(--glow-turquoise);
+}
+
+.pageIntro {
+  margin: -0.5rem 0 1.25rem;
+  max-width: 70ch;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.pageIntro code {
+  font-family: 'SF Mono', ui-monospace, Menlo, monospace;
+  font-size: 0.8rem;
+  background: var(--bg-surface);
+  border-radius: 4px;
+  padding: 0.08rem 0.3rem;
+}
+
+/* --- KPI cards --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.1rem;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.cardLabel {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.cardValue {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 1.7rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+
+.cardSub {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
+/* --- Tables --- */
+.tableWrap {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  overflow-x: auto;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+}
+
+.table tr:last-child th,
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table thead th {
+  background: var(--bg-surface);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Row-header cells (key/value tables) */
+.table tbody th {
+  width: 200px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.table tbody tr:hover td {
+  background: rgba(var(--accent-rgb), 0.025);
+}
+
+.table a {
+  color: var(--glow-turquoise);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.table a:hover {
+  text-decoration: underline;
+}
+
+/* `className="mono"` in JSX is a plain (global) class — scope it
+   under the hashed .table so it styles without a JSX change. */
+.table :global(.mono) {
+  font-family: 'SF Mono', ui-monospace, Menlo, monospace;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.cellSub {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
+.cellBreak {
+  word-break: break-all;
+}
+
+.cellPre {
+  white-space: pre-wrap;
+}
+
+.cellRight {
+  text-align: right;
+}
+
+.cellTotal {
+  text-align: right;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.cellRefund {
+  text-align: right;
+  color: #b91c1c;
+}
+
+/* --- Badges --- */
+.statusBadge {
+  display: inline-block;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.status_active {
+  background: #fff4e6;
+  color: #b85c00;
+}
+
+.status_abandoned {
+  background: #ffe2e2;
+  color: #b91c1c;
+}
+
+.status_recovered {
+  background: #e7f7ec;
+  color: #1a8a4a;
+}
+
+.status_completed {
+  background: #e6efff;
+  color: #1d4ed8;
+}
+
+/* Order status badges */
+.status_received {
+  background: #eef2f7;
+  color: #475569;
+}
+
+.status_pending_payment {
+  background: #fff4e6;
+  color: #b85c00;
+}
+
+.status_paid {
+  background: #e7f7ec;
+  color: #1a8a4a;
+}
+
+.status_cancelled {
+  background: #f1f5f9;
+  color: #6b7280;
+}
+
+.status_failed {
+  background: #ffe2e2;
+  color: #b91c1c;
+}
+
+.status_refunded {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* Fulfillment badges */
+.fulfill_unfulfilled {
+  background: #eef2f7;
+  color: #475569;
+}
+
+.fulfill_shipped {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.fulfill_delivered {
+  background: #e7f7ec;
+  color: #1a8a4a;
+}
+
+/* Market badges */
+.market_main {
+  background: var(--glow-blue-dim);
+  color: #1e3a8a;
+}
+
+/* Review status badges */
+.status_pending {
+  background: #fff4e6;
+  color: #b85c00;
+}
+
+.status_approved {
+  background: #e7f7ec;
+  color: #1a8a4a;
+}
+
+.status_declined {
+  background: #f1f5f9;
+  color: #6b7280;
+}
+
+/* --- Filter bars & inline form panels --- */
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+  padding: 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  margin-bottom: 1.25rem;
+}
+
+.filterField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1 1 calc(50% - 0.75rem);
+  min-width: 0;
+}
+
+@media (min-width: 640px) {
+  .filterField {
+    flex: 0 1 auto;
+    min-width: 130px;
+  }
+}
+
+.filterLabel {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.filterField select,
+.filterField input {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  font-size: 1rem; /* iOS zoom rule — never below 16px */
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  font-family: inherit;
+  min-height: 44px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filterField input[type='checkbox'] {
+  width: 1.15rem;
+  height: 1.15rem;
+  min-height: 0;
+  accent-color: var(--glow-turquoise);
+}
+
+.filterField select:focus,
+.filterField input:focus {
+  outline: none;
+  border-color: var(--glow-turquoise);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.12);
+}
+
+.checkboxField {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  flex-basis: 100%;
+  min-height: 44px;
+}
+
+.checkboxField .filterLabel {
+  margin-bottom: 0;
+}
+
+.fieldError {
+  color: #b91c1c;
+  font-size: 0.75rem;
+}
+
+.filterActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
+
+@media (min-width: 640px) {
+  .filterActions {
+    flex: 0 0 auto;
+  }
+}
+
+.spanAll {
+  flex-basis: 100%;
+}
+
+.grow {
+  flex: 1 1 220px;
+}
+
+/* --- Buttons --- */
+.pageBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  min-height: 44px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.pageBtn:hover {
+  border-color: var(--glow-turquoise);
+  color: var(--glow-turquoise);
+  background: rgba(var(--accent-rgb), 0.04);
+}
+
+.pageBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pageBtnDisabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.btnPrimary {
+  composes: pageBtn;
+  background: var(--gradient-primary);
+  color: var(--text-on-primary);
+  border: none;
+  box-shadow: var(--shadow-glow-turquoise);
+}
+
+.btnPrimary:hover {
+  color: var(--text-on-primary);
+  background: var(--gradient-primary);
+  box-shadow: var(--shadow-primary);
+  transform: translateY(-1px);
+}
+
+.btnDanger {
+  composes: pageBtn;
+  border-color: rgba(185, 28, 28, 0.35);
+  color: #b91c1c;
+}
+
+.btnDanger:hover {
+  border-color: #b91c1c;
+  color: #b91c1c;
+  background: #fef2f2;
+}
+
+/* --- Inline status / helper text --- */
+.actionRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.errorText {
+  color: #b91c1c;
+  font-size: 0.82rem;
+}
+
+.okText {
+  color: #1a8a4a;
+  font-size: 0.82rem;
+}
+
+.helpText {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  max-width: 70ch;
+}
+
+.helpText code {
+  font-family: 'SF Mono', ui-monospace, Menlo, monospace;
+  font-size: 0.74rem;
+  background: var(--bg-surface);
+  border-radius: 4px;
+  padding: 0.08rem 0.3rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 1rem; /* iOS zoom rule */
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--glow-turquoise);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.12);
+}
+
+.stack {
+  margin-top: 1rem;
+}
+
+.empty {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.warn {
+  padding: 0.9rem 1.1rem;
+  background: #fff8e6;
+  border: 1px solid rgba(212, 130, 10, 0.35);
+  border-radius: var(--radius-sm);
+  color: #7a5200;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+/* --- Pagination --- */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pageInfo {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.pageNav {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* --- Login --- */
+.loginShell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-deep);
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  padding: 1rem;
+}
+
+.loginCard {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 40px rgba(16, 24, 40, 0.08);
+  width: 100%;
+  max-width: 380px;
+}
+
+.loginBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.loginCard h1 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.loginCard p {
+  margin: 0 0 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.loginCard input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  font-size: 1rem; /* iOS zoom rule */
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  margin-bottom: 0.9rem;
+  font-family: inherit;
+  min-height: 48px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loginCard input:focus {
+  outline: none;
+  border-color: var(--glow-turquoise);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.12);
+}
+
+.loginCard button {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--gradient-primary);
+  color: var(--text-on-primary);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  min-height: 48px;
+  cursor: pointer;
+  box-shadow: var(--shadow-glow-turquoise);
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.loginCard button:hover {
+  box-shadow: var(--shadow-primary);
+  transform: translateY(-1px);
+}
+
+.loginCard button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.loginError {
+  font-size: 0.82rem;
+  color: #b91c1c;
+  margin: 0 0 0.8rem;
+}
+
+/* ============================================================
+   Mobile: data tables become labelled cards (≤ 720px).
+   Key/value tables (th in tbody) keep their two-line stacking.
+   ============================================================ */
+@media (max-width: 720px) {
+  .table {
+    display: block;
+    width: 100%;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody {
+    display: block;
+  }
+
+  .table tr {
+    display: block;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .table tr:last-child {
+    border-bottom: none;
+  }
+
+  .table tbody tr:hover td {
+    background: transparent;
+  }
+
+  .table th,
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.3rem 0;
+    border: none;
+    text-align: right;
+    font-size: 0.88rem;
+    background: transparent;
+    text-transform: none;
+    letter-spacing: 0;
+    color: inherit;
+    font-weight: normal;
+    word-break: break-word;
+    width: auto;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    flex-shrink: 0;
+    text-align: left;
+  }
+
+  .table th {
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .table :global(.mono) {
+    font-size: 0.78rem;
+  }
+
+  .cellRight,
+  .cellTotal,
+  .cellRefund {
+    text-align: right;
+  }
+
+  .table .empty {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .table .empty::before {
+    display: none;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+
+  .pageNav {
+    width: 100%;
+  }
+
+  .pageNav > * {
+    flex: 1 1 auto;
+  }
+}

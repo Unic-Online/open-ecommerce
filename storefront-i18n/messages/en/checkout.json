@@ -1,0 +1,90 @@
+{
+  "pageTitle": "Checkout",
+  "emptyCart": {
+    "title": "Your basket is empty",
+    "hint": "Add Acme Store products to continue"
+  },
+  "steps": {
+    "email": "📧 Your email",
+    "emailDone": "📧 Email",
+    "shipping": "📦 Delivery address",
+    "payment": "💳 Payment"
+  },
+  "edit": "Edit",
+  "editShipping": "Edit",
+  "emailIntro": "We save your email to send you your order confirmation and delivery updates. You'll complete the remaining details at the next step.",
+  "fields": {
+    "emailRequired": "Email *",
+    "emailPlaceholder": "name@email.com",
+    "billingType": "Billing type",
+    "individual": "Individual",
+    "company": "Business",
+    "companyName": "Company name *",
+    "companyNamePlaceholder": "Example Ltd",
+    "companyCui": "Company registration number *",
+    "companyCuiPlaceholder": "12345678",
+    "companyRegCom": "Companies House number *",
+    "companyRegComPlaceholder": "OC123456",
+    "firstName": "First name *",
+    "firstNamePlaceholder": "Jane",
+    "lastName": "Last name *",
+    "lastNamePlaceholder": "Smith",
+    "phone": "Phone *",
+    "phonePlaceholder": "+44 7xxx xxxxxx",
+    "address": "Address *",
+    "addressPlaceholder": "10 Example Street, Flat 5",
+    "city": "City *",
+    "cityPlaceholder": "London",
+    "county": "County *",
+    "countyPlaceholder": "Greater London",
+    "country": "Country *",
+    "postalCode": "Postcode *",
+    "postalCodePlaceholder": "SW1A 1AA",
+    "useAltShipping": "Deliver to a different address",
+    "altAddressTitle": "Delivery address",
+    "altAddressPlaceholder": "10 Example Street"
+  },
+  "actions": {
+    "savingEmail": "Saving…",
+    "continueEmail": "Continue →",
+    "continueToPayment": "Continue to payment →",
+    "processing": "Processing...",
+    "rambursLong": "Pay on delivery — {total}",
+    "confirmRamburs": "Confirm order — pay on delivery — {total}"
+  },
+  "summary": {
+    "title": "📋 Order summary",
+    "subtotal": "Subtotal",
+    "welcomeDiscount": "🎁 Welcome discount (-{percent}%)",
+    "couponBadge": "Code applied",
+    "couponLine": "{code} (-{percent}%)",
+    "couponMismatch": "Your code <strong>{code}</strong> is linked to a different email address ({email}). Use the same email at checkout to receive the {percent}% discount.",
+    "shipping": "Delivery",
+    "shippingFree": "Free",
+    "shippingFreeNote": "(free above {amount})",
+    "total": "Total",
+    "shippingSummaryDeliverTo": "Delivering to:",
+    "shippingSummaryCompany": "Company reg: {cui} · Companies House: {regcom}"
+  },
+  "payment": {
+    "selectMethod": "Choose your payment method",
+    "online": "Pay online",
+    "onlineMeta": "Card / Revolut Pay",
+    "ramburs": "Pay on delivery",
+    "rambursMeta": "On receipt",
+    "rambursNote": "You pay the courier when your order arrives at your address.",
+    "or": "or",
+    "title": "Payment"
+  },
+  "errors": {
+    "invalidEmail": "Please enter a valid email address.",
+    "verifyShipping": "Please check your delivery details.",
+    "orderProcessing": "Error processing your order",
+    "generic": "An error occurred. Please try again."
+  },
+  "unavailable": {
+    "title": "Orders not available for this area",
+    "body": "Orders are not yet available in this area. Please contact us to complete your purchase.",
+    "cta": "Back to home"
+  }
+}

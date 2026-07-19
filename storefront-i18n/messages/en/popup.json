@@ -1,0 +1,39 @@
+{
+  "email": {
+    "close": "Close",
+    "badge": "🎁 EXCLUSIVE OFFER",
+    "title": "-{percent}%",
+    "subtitleAfter": "on your first order",
+    "subtitle": "Enter your email address to automatically receive a <strong>{percent}%</strong> discount on your first order and check out faster.",
+    "placeholder": "name@email.com",
+    "submit": "Claim my {percent}% discount →",
+    "hint": "No spam. Unsubscribe at any time.",
+    "successTitle": "Thank you! 🎉",
+    "successSubtitle": "The welcome discount will be applied automatically at checkout, and your email has been saved to speed things up.",
+    "errorInvalidEmail": "Please enter a valid email address."
+  },
+  "exitIntent": {
+    "close": "Close",
+    "badge": "{percent}% discount",
+    "title": "You weren't leaving without your basket, were you?",
+    "copyPrimary": "🤝 First impressions matter! Enjoy <strong>{percent}%</strong> off as you explore our range!",
+    "copySecondary": "🎁 Enter your email and unlock your discount. Guaranteed, free 14-day returns and fast phone support.",
+    "placeholder": "Enter your email address here!",
+    "submit": "Save",
+    "successTitle": "Thank you! 🎉",
+    "successCopy": "Your {percent}% discount will be applied automatically to your next order.",
+    "errorInvalidEmail": "Please enter a valid email address."
+  },
+  "newsletter": {
+    "firstNamePlaceholder": "First name",
+    "firstNameAria": "First name",
+    "lastNamePlaceholder": "Last name",
+    "lastNameAria": "Last name",
+    "emailPlaceholder": "Email",
+    "emailAria": "Email",
+    "submit": "Subscribe",
+    "submitting": "...",
+    "success": "✓ Thank you",
+    "error": "Please enter a valid email address."
+  }
+}

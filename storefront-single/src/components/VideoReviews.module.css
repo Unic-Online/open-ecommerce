@@ -1,0 +1,211 @@
+/* ============================================================
+   VideoReviews — Vimeo client review embeds
+   Premium card grid with click-to-play placeholders
+   ============================================================ */
+
+.section {
+  padding: 3.5rem 1.25rem 3rem;
+  background: #fafafa;
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.inner {
+  max-width: 880px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 0.7rem;
+}
+
+.title {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: clamp(1.7rem, 6vw, 2.4rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+.subtitle {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.92rem;
+  color: #666;
+  margin: 0 auto 2rem;
+  max-width: 420px;
+  line-height: 1.55;
+}
+
+/* ---------- Video grid ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* ---------- Individual card ---------- */
+.card {
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(var(--accent-rgb), 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Video wrapper ---------- */
+.videoWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: linear-gradient(145deg, #1a1a1a 0%, #0a0a0a 100%);
+  overflow: hidden;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ---------- Click-to-play placeholder ---------- */
+.placeholder {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.placeholderGlow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(var(--accent-rgb), 0.15) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(var(--accent-rgb), 0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.playBtn {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.placeholder:hover .playBtn {
+  transform: scale(1.08);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+.playTriangle {
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 18px solid #1a1a1a;
+  margin-left: 4px;
+}
+
+/* ---------- Card info below video ---------- */
+.cardInfo {
+  padding: 0.6rem 0.7rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.verifiedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #1a9955;
+}
+
+.productTag {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.68rem;
+  color: #888;
+  font-weight: 400;
+}
+
+/* ---------- Mobile tweaks ---------- */
+@media (max-width: 480px) {
+  .playBtn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .playTriangle {
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 14px solid #1a1a1a;
+    margin-left: 3px;
+  }
+
+  .cardInfo {
+    padding: 0.45rem 0.55rem 0.55rem;
+  }
+
+  .verifiedBadge {
+    font-size: 0.65rem;
+  }
+
+  .productTag {
+    font-size: 0.6rem;
+  }
+}

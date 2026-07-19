@@ -1,0 +1,19 @@
+{
+  "notConfigured": "Plata cu cardul nu e configurată — lipsește",
+  "walletNotice": "Completează adresa de livrare pentru a activa Revolut Pay, Apple Pay și Google Pay.",
+  "dividerOrCard": "sau plătește cu cardul",
+  "cardHintNoShipping": "Completează adresa de livrare pentru a plăti cu cardul.",
+  "cardHintIdle": "Apasă pentru a deschide formularul securizat și a plăti cu cardul.",
+  "cardHintReady": "Datele sunt blocate pentru această sesiune de plată. Dacă schimbi coșul, formularul se reinițializează.",
+  "cardHintPreparing": "Pregătim formularul securizat de card...",
+  "processing": "Se procesează...",
+  "payCard": "Plătește {total} cu cardul",
+  "errors": {
+    "shippingRequired": "Completează adresa de livrare înainte de plată.",
+    "cannotInitiate": "Nu s-a putut iniția plata.",
+    "revolutPayFailed": "Plata Revolut Pay a eșuat.",
+    "walletFailed": "Plata wallet a eșuat.",
+    "cardFailed": "Plata cu cardul a eșuat.",
+    "completeAddressAndWait": "Completează adresa și așteaptă încărcarea formularului."
+  }
+}

@@ -1,0 +1,308 @@
+.footer {
+  background: #0d0d0f;
+  color: #d8dde6;
+  padding: 3.5rem 0 1.25rem;
+  margin-top: 4rem;
+  font-family: var(--font-jost), system-ui, sans-serif;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1.2fr 1fr 1.1fr 1.4fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+}
+
+/* ---- Brand column ---- */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logoWrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logoImg {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px 14px;
+  display: block;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact a {
+  color: #d8dde6;
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: color 0.2s ease;
+}
+
+.contact a:hover {
+  color: var(--glow-turquoise);
+}
+
+/* ---- Link columns ---- */
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.colTitle {
+  font-family: var(--font-jost), sans-serif !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c9a23c;
+  margin: 0 0 0.7rem !important;
+}
+
+.link {
+  color: #d8dde6;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.link:hover {
+  color: var(--glow-turquoise);
+}
+
+/* ---- Newsletter column ---- */
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.newsletterRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.newsletterEmailRow {
+  display: block;
+}
+
+.newsletterInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #3a3a40;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.55rem 0.1rem;
+  transition: border-color 0.2s ease;
+}
+
+.newsletterInput::placeholder {
+  color: #8a8d97;
+}
+
+.newsletterInput:focus {
+  outline: none;
+  border-bottom-color: #c9a23c;
+}
+
+.newsletterBtn {
+  margin-top: 0.4rem;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: var(--font-jost), sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.newsletterBtn:hover:not(:disabled) {
+  background: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+.newsletterBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.newsletterError {
+  font-size: 0.78rem;
+  color: #ff8a7a;
+  margin: 0;
+}
+
+/* ---- Trust badges column ---- */
+.badges {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: flex-start;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.badgePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #fff;
+  color: #0d0d0f;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 0.7rem;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.badgeBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  color: #0d0d0f;
+  border-radius: 4px;
+  padding: 0.55rem 0.8rem;
+  text-decoration: none;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  max-width: 240px;
+  transition: transform 0.2s ease;
+}
+
+.badgeBlock:hover {
+  transform: translateY(-1px);
+}
+
+.badgeBlockTitle {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.badgeBlockSub {
+  display: inline-block;
+  background: var(--accent-dark);
+  color: #fff;
+  font-size: 0.55rem;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  margin-top: 0.2rem;
+}
+
+.badgeAnpc {
+  background: #1d4cb3;
+  color: #fff;
+}
+
+/* Trademark notice in the dark footer — override the light-mode default
+   from TrademarkNotice.module.css so the small ® line stays readable. */
+.footer .trademark {
+  margin-top: 2.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #1f1f23;
+  color: #d8dde6;
+}
+
+.footer .trademark strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ---- Bottom strip ---- */
+.bottom {
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #1f1f23;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.copy {
+  font-size: 0.78rem;
+  color: #8a8d97;
+  margin: 0;
+}
+
+.copy strong {
+  color: #c9a23c;
+  font-weight: 600;
+}
+
+.signature {
+  font-size: 0.78rem;
+  color: #8a8d97;
+  margin: 0;
+}
+
+.signature a {
+  color: #c9a23c;
+  text-decoration: none;
+}
+
+.signature a:hover {
+  color: var(--glow-turquoise);
+}
+
+.cookieLink {
+  font-size: 0.8rem;
+  color: #8a8d97 !important;
+}
+
+.cookieLink:hover {
+  color: var(--glow-turquoise) !important;
+}

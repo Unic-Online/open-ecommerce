@@ -1,0 +1,182 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: left;
+}
+
+.card:hover {
+  border-color: rgba(var(--accent-rgb), 0.3);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.image {
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.03);
+}
+
+.discountBadge {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  background: var(--gradient-primary);
+  color: var(--text-on-primary);
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  line-height: 1;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(var(--accent-rgb), 0.3);
+}
+
+.savingsBadge {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  background: rgba(26, 13, 24, 0.88);
+  color: #fff;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.3rem 0.55rem;
+  border-radius: 6px;
+  line-height: 1;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.body {
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.categoryLabel {
+  display: block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.name {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.35;
+  margin: 0 0 0.5rem;
+}
+
+.desc {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.78rem;
+  color: #666;
+  line-height: 1.55;
+  margin: 0 0 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0.15rem 0 0.5rem;
+}
+
+.stars {
+  font-size: 0.78rem;
+  color: #f5a623;
+  letter-spacing: 0.04em;
+}
+
+.reviewCount {
+  font-size: 0.72rem;
+  color: var(--price-old);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.prices {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.6rem;
+  min-width: 0;
+}
+
+.priceOld {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.78rem;
+  color: var(--price-old);
+  text-decoration: line-through;
+}
+
+.priceNew {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--price-new);
+  letter-spacing: 0.01em;
+}
+
+.stockBadge {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #0d6a37;
+  background: rgba(13, 106, 55, 0.12);
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+/* On the narrow 2-column mobile grid the card has ~120px of content width,
+   not enough for the old + new price on one baseline row. Stack them so the
+   discounted price can never be clipped by the card's overflow: hidden. */
+@media (max-width: 600px) {
+  .prices {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+  }
+
+  .priceNew {
+    font-size: 0.98rem;
+  }
+}

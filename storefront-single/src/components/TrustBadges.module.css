@@ -1,0 +1,36 @@
+.row {
+  display: flex;
+  gap: 0.85rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.45rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 88px;
+  height: 88px;
+  display: block;
+  /* Why: gpt-image-2 doesn't actually support transparent backgrounds, so the
+     PNGs ship with a white square frame around the circular badge. Clip the
+     square in the browser so corners visually disappear without re-encoding. */
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+}
+
+@media (max-width: 480px) {
+  .row {
+    gap: 0.5rem;
+  }
+  .image {
+    width: 76px;
+    height: 76px;
+  }
+}

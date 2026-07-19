@@ -1,0 +1,39 @@
+{
+  "logoAria": "Home",
+  "home": "Home",
+  "categories": "Categories",
+  "despreNoi": "About us",
+  "contact": "Contact us",
+  "openMenu": "Open menu",
+  "closeMenu": "Close menu",
+  "search": "Search",
+  "account": "Account",
+  "searchPlaceholder": "Search products...",
+  "searchClear": "Clear search",
+  "searchNoResults": "No products match your search.",
+  "menuItems": {
+    "home": "Home",
+    "furniture": "Furniture",
+    "lighting": "Lighting",
+    "outdoor": "Outdoor",
+    "account": "My account",
+    "despreNoi": "About us",
+    "contact": "Contact"
+  },
+  "categoryLinks": {
+    "furniture": {
+      "label": "Furniture",
+      "description": "Solid-wood pieces for every room"
+    },
+    "lighting": {
+      "label": "Lighting",
+      "description": "Lamps that set the mood"
+    },
+    "outdoor": {
+      "label": "Outdoor",
+      "description": "Garden & solar lighting"
+    }
+  },
+  "whatsappAria": "Contact us on WhatsApp",
+  "whatsappFloatingMessage": "Hello! I'm interested in your products."
+}

@@ -1,0 +1,120 @@
+.page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.25rem;
+  background: var(--bg-deep, #f5f6f8);
+  font-family: var(--font-jost), system-ui, sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 640px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 18px;
+  padding: 3.25rem 2rem 3rem;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.05);
+}
+
+.code {
+  margin: 0 0 0.75rem;
+  font-size: clamp(4rem, 14vw, 6.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heading {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.4rem, 3.6vw, 1.85rem);
+  font-weight: 700;
+  color: #1a1d24;
+  line-height: 1.25;
+}
+
+.body {
+  margin: 0 auto 2rem;
+  max-width: 460px;
+  color: #4a5060;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background: var(--gradient-primary);
+  color: var(--text-on-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.28);
+}
+
+.cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(var(--accent-rgb), 0.34);
+}
+
+.cta:focus-visible {
+  outline: 2px solid var(--accent-dark);
+  outline-offset: 3px;
+}
+
+.explore {
+  margin-top: 2.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid #ececec;
+}
+
+.exploreLabel {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8690a2;
+  font-weight: 600;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.categoryLink {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  background: #f5f6f8;
+  color: #1a1d24;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.categoryLink:hover {
+  background: #ffffff;
+  border-color: var(--glow-turquoise);
+  color: var(--accent-dark);
+}
+
+.categoryLink:focus-visible {
+  outline: 2px solid var(--accent-dark);
+  outline-offset: 2px;
+}

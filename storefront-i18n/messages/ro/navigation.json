@@ -1,0 +1,39 @@
+{
+  "logoAria": "Acasă",
+  "home": "Acasă",
+  "categories": "Categorii",
+  "despreNoi": "Despre noi",
+  "contact": "Contactează-ne",
+  "openMenu": "Deschide meniul",
+  "closeMenu": "Închide meniul",
+  "search": "Caută",
+  "account": "Cont",
+  "searchPlaceholder": "Caută produse...",
+  "searchClear": "Șterge căutarea",
+  "searchNoResults": "Niciun produs nu corespunde căutării.",
+  "menuItems": {
+    "home": "Acasă",
+    "furniture": "Mobilier",
+    "lighting": "Iluminat",
+    "outdoor": "Exterior",
+    "account": "Contul meu",
+    "despreNoi": "Despre noi",
+    "contact": "Contact"
+  },
+  "categoryLinks": {
+    "furniture": {
+      "label": "Mobilier",
+      "description": "Piese din lemn masiv pentru orice cameră"
+    },
+    "lighting": {
+      "label": "Iluminat",
+      "description": "Corpuri de iluminat care creează atmosferă"
+    },
+    "outdoor": {
+      "label": "Exterior",
+      "description": "Iluminat de grădină și solar"
+    }
+  },
+  "whatsappAria": "Contactează-ne pe WhatsApp",
+  "whatsappFloatingMessage": "Bună! Sunt interesat(ă) de produsele voastre."
+}

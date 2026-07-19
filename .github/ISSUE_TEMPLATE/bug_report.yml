@@ -1,0 +1,32 @@
+name: Bug report
+description: Something broken in one of the templates
+labels: [bug]
+body:
+  - type: dropdown
+    id: template
+    attributes:
+      label: Template
+      options:
+        - storefront-single
+        - storefront-i18n
+        - both
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead?
+      placeholder: Steps to reproduce, expected vs actual.
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Node version, pnpm version, OS, deployment target (local dev / Vercel / other). Mention which env vars are set (names only — never paste values).
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      render: shell

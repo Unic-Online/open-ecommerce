@@ -1,0 +1,262 @@
+/* ============================================================
+   HeroCarousel — full-width autoplay hero with "peek" effect
+   Shows ~88% of the current slide + sliver of the next
+   ============================================================ */
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* ---------- Embla viewport & container ---------- */
+.embla {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.emblaViewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.emblaContainer {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  gap: 0;
+}
+
+.emblaSlide {
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  max-height: 520px;
+  overflow: hidden;
+}
+
+@media (min-width: 600px) {
+  .emblaSlide {
+    max-height: 560px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .emblaSlide {
+    flex: 0 0 50%;
+    max-height: 520px;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ---------- Slide image ---------- */
+.slideImage {
+  object-fit: cover;
+  transition: transform 8s ease-out;
+}
+
+.emblaSlide:hover .slideImage {
+  transform: scale(1.03);
+}
+
+/* ---------- Dark gradient overlay on every slide ---------- */
+.slideOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(15, 8, 16, 0.15) 0%, rgba(15, 8, 16, 0.72) 100%),
+    linear-gradient(90deg, rgba(15, 8, 16, 0.45) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ---------- Text content on the first slide ---------- */
+.slideContent {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+@media (min-width: 600px) {
+  .slideContent {
+    padding: 2rem 2rem 2.5rem;
+    gap: 0.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slideContent {
+    padding: 2.5rem 3rem 3rem;
+    gap: 1rem;
+  }
+}
+
+.slideEyebrow {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--glow-turquoise);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.slideEyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.slideTitle {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 8vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ff8a7a 40%,
+    var(--glow-turquoise) 70%,
+    var(--accent-dark) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.slideSub {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  max-width: 380px;
+  line-height: 1.5;
+}
+
+/* ---------- Countdown wrapper on first slide ---------- */
+.countdownWrap {
+  margin-top: 0.25rem;
+}
+
+/* ---------- Generic slide label (non-first slides) ---------- */
+.slideLabelWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.25rem 1.25rem 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.slideLabel {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: clamp(1rem, 3.5vw, 1.4rem);
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.slideLabelSub {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0.3rem 0 0;
+  font-weight: 300;
+}
+
+.slideCta {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.5rem 1.4rem;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.slideCta:hover {
+  background: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+/* ---------- Dot navigation ---------- */
+.dots {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 5;
+}
+
+.dot {
+  all: unset;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.dotActive {
+  width: 28px;
+  border-radius: 4px;
+  background: var(--gradient-primary);
+  box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.5);
+}
+
+/* ---------- Autoplay progress bar ---------- */
+.progressWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 5;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--gradient-primary);
+  transition: width 0.3s linear;
+  border-radius: 0 2px 2px 0;
+}

@@ -1,0 +1,96 @@
+/* === TikTok Embed — click-to-play === */
+
+.embedWrap {
+  width: 100%;
+  max-width: 325px;
+  height: 377px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f3f3f3;
+  border: 1px solid #e8e8e8;
+  position: relative;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.placeholder {
+  all: unset;
+  box-sizing: border-box;
+  width: 325px;
+  height: 377px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.placeholder:hover {
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.brandTag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.playBtn {
+  width: 72px;
+  height: 72px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(var(--accent-rgb), 0.4);
+  transition: transform 0.25s ease;
+}
+
+.placeholder:hover .playBtn {
+  transform: scale(1.1);
+}
+
+.playTriangle {
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 22px solid #fff;
+  margin-left: 5px;
+}
+
+.playLabel {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 400px) {
+  .embedWrap,
+  .iframe,
+  .placeholder {
+    width: 100%;
+    max-width: 325px;
+  }
+}

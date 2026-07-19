@@ -1,0 +1,69 @@
+{
+  "addToCart": "Add to basket",
+  "inStock": "In stock",
+  "preOrder": "Pre-order",
+  "soon": "Coming soon",
+  "page": {
+    "breadcrumbAria": "Navigation",
+    "headings": {
+      "videoReviews": "Video reviews",
+      "description": "Description",
+      "customerReviews": "Customer reviews",
+      "crossSell": "Customers also bought",
+      "popular": "Popular products",
+      "faq": "Frequently asked questions"
+    },
+    "categoryShort": {
+      "furniture": "Furniture",
+      "lighting": "Lighting",
+      "outdoor": "Outdoor"
+    }
+  },
+  "buybox": {
+    "addToCart": "Add to basket",
+    "added": "Added ✓",
+    "discountBadge": "-{percent}%",
+    "dimensionLabel": "Full dimensions",
+    "deliveryNotice": "Order now, delivery {date}.",
+    "deliveryHelper": "The date is an estimate and applies to in-stock items only. The {days}-day lead time is calculated in working days only.",
+    "helpHello": "Hello, my name is ",
+    "helpAfter": "! If you need any help, you can call me at any time on ",
+    "helpOr": " or email me at ",
+    "supportAria": "Customer support",
+    "supportAlt": "{name} - customer support",
+    "qtyDecrease": "Decrease",
+    "qtyIncrease": "Increase",
+    "paymentSecure": "100% secure payment,",
+    "paymentVia": "via Revolut",
+    "categoriesLabel": "Categories:",
+    "shareLabel": "Share",
+    "shareFacebook": "Share on Facebook",
+    "shareWhatsapp": "Share on WhatsApp",
+    "shareTelegram": "Share on Telegram",
+    "shareEmail": "Share by email",
+    "ratingAria": "Rating {rating} out of 5 stars",
+    "ratingValue": "{rating} out of 5",
+    "ratingCount": "({count, plural, one {# review} other {# reviews}})"
+  },
+  "upsell": {
+    "badge": {
+      "furniture": "See the premium model",
+      "lighting": "See the larger model",
+      "outdoor": "See the premium model"
+    },
+    "priceDiff": "+ {amount} compared to {name}"
+  },
+  "floatingBar": {
+    "addToCart": "Add to basket",
+    "added": "Added ✓"
+  },
+  "gallery": {
+    "thumbAria": "Image {n}: {label}",
+    "expandAria": "Enlarge image {n}",
+    "dotAria": "Go to image {n}",
+    "lightboxAria": "Product gallery — enlarged view",
+    "lightboxClose": "Close gallery",
+    "lightboxPrev": "Previous image",
+    "lightboxNext": "Next image"
+  }
+}

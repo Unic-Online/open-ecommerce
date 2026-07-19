@@ -1,0 +1,17 @@
+{
+  "firstNameRequired": "First name is required",
+  "lastNameRequired": "Last name is required",
+  "emailInvalid": "Invalid email address",
+  "phoneInvalid": "Invalid phone number",
+  "countyRequired": "County is required",
+  "cityRequired": "City is required",
+  "addressRequired": "Address is required",
+  "countryRequired": "Country is required",
+  "postalCodeRequired": "Postcode is required",
+  "companyNameRequired": "Company name is required",
+  "companyCuiRequired": "Company registration number is required",
+  "companyRegComRequired": "Companies House number is required",
+  "altAddressRequired": "Delivery address is required",
+  "couponInvalid": "Invalid discount code",
+  "orderItemsRequired": "Your order must contain at least one item"
+}

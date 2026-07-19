@@ -1,0 +1,201 @@
+.page {
+  background: #ffffff;
+  color: #1a1a1a;
+  min-height: 100vh;
+  font-family: var(--font-jost), system-ui, sans-serif;
+}
+
+.hero {
+  background:
+    radial-gradient(ellipse at center top, rgba(var(--accent-rgb), 0.18) 0%, transparent 60%),
+    linear-gradient(180deg, #0d1a1f 0%, #081116 100%);
+  padding: 4rem 1.25rem 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #ff8a7a;
+  margin-bottom: 0.7rem;
+}
+
+.heroTitle {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: clamp(2rem, 7vw, 3.4rem);
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  line-height: 1.15;
+  color: #fff;
+}
+
+.heroSub {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 auto;
+  max-width: 540px;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+.container h2 {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: clamp(1.4rem, 4.5vw, 1.8rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 2.4rem 0 0.8rem;
+  line-height: 1.25;
+}
+
+.container h2:first-child {
+  margin-top: 0;
+}
+
+.container h3 {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 1.6rem 0 0.6rem;
+}
+
+.container p {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.97rem;
+  color: #444;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+  max-width: none;
+}
+
+.container ul,
+.container ol {
+  margin: 0 0 1.2rem 1.4rem;
+  color: #444;
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+
+.container li {
+  margin-bottom: 0.4rem;
+}
+
+.container a {
+  color: var(--glow-turquoise);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.container a:hover {
+  color: var(--accent-dark);
+}
+
+.container strong {
+  color: #1a1a1a;
+}
+
+/* ----- Despre noi value cards ----- */
+.valueGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem 0 1rem;
+}
+
+@media (min-width: 720px) {
+  .valueGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.valueCard {
+  background: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 1.4rem 1.3rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.valueCard:hover {
+  border-color: rgba(var(--accent-rgb), 0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.valueIcon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  line-height: 1;
+}
+
+.valueTitle {
+  font-family: var(--font-jost), system-ui, sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.4rem !important;
+}
+
+.valueDesc {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.55;
+  margin: 0 !important;
+}
+
+/* ----- Cum comand steps ----- */
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.step {
+  display: flex;
+  gap: 1rem;
+  background: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+}
+
+.stepNum {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: var(--text-on-primary);
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(var(--accent-rgb), 0.3);
+}
+
+.stepBody h3 {
+  margin: 0 0 0.3rem !important;
+  font-size: 1.05rem !important;
+}
+
+.stepBody p {
+  margin: 0 !important;
+  font-size: 0.92rem;
+}

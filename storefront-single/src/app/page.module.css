@@ -1,0 +1,716 @@
+/* ============================================================
+   landing3.module.css
+   Fonts: Jost (body), Cardo (display headings)
+   ============================================================ */
+
+.page {
+  background: #ffffff;
+  color: #1a1a1a;
+  min-height: 100vh;
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-weight: 400;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.page :global(h1),
+.page :global(h2),
+.page :global(h3),
+.page :global(h4) {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-weight: 700;
+}
+
+/* ---------- Spring Sale banner (top + bottom) ---------- */
+/* ---------- Categories grid ---------- */
+.categoriesSection {
+  padding: 1.5rem 1rem 2.5rem;
+  background: #ffffff;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.categoryTile {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fafafa;
+  border: 1px solid #ececec;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoryTile:hover {
+  transform: translateY(-3px);
+  border-color: rgba(var(--accent-rgb), 0.3);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.categoryImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.categoryImage {
+  object-fit: cover;
+}
+
+.springBadge {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  background: var(--gradient-primary);
+  color: var(--text-on-primary);
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(var(--accent-rgb), 0.35);
+}
+
+.categoryFooter {
+  padding: 0.65rem 0.7rem 0.85rem;
+  text-align: center;
+}
+
+.categoryName {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.25;
+}
+
+/* ---------- Product sections ---------- */
+.productSection {
+  padding: 3rem 1.25rem 2rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.altBg {
+  background: #fafafa;
+}
+
+.sectionEyebrow {
+  display: block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 0.7rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: clamp(1.7rem, 6vw, 2.4rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0 auto 1.75rem;
+  max-width: 560px;
+}
+
+/* ---------- Vertical product list (full-width cards) ---------- */
+.productListVertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .productGrid {
+    gap: 0.6rem;
+    max-width: 560px;
+  }
+}
+
+/* ---------- Lights grid (small 2-col cards) ---------- */
+.lightsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.lightCard {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  text-align: left;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.lightCard:hover {
+  border-color: rgba(var(--accent-rgb), 0.3);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.lightImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+
+.lightImage {
+  object-fit: cover;
+}
+
+.lightBody {
+  padding: 0.7rem 0.8rem 0.85rem;
+}
+
+.lightName {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin: 0 0 0.45rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lightPrices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+/* ---------- Refurbished CTA banner ---------- */
+.refurbishedSection {
+  padding: 1.25rem 1.25rem 2.5rem;
+  background: #ffffff;
+}
+
+.refurbishedCard {
+  background:
+    radial-gradient(ellipse at top right, rgba(var(--accent-rgb), 0.4) 0%, transparent 55%),
+    linear-gradient(135deg, var(--accent-dark) 0%, var(--glow-turquoise) 55%, #ff8a7a 100%);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(var(--accent-rgb), 0.25);
+}
+
+.refurbishedTag {
+  display: inline-block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.32rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.refurbishedTitle {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: clamp(1.3rem, 5vw, 1.7rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.6rem;
+  line-height: 1.25;
+}
+
+.refurbishedSub {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 auto 1.3rem;
+  line-height: 1.55;
+  max-width: 420px;
+  font-weight: 300;
+}
+
+.refurbishedCta {
+  display: inline-block;
+  background: #fff;
+  color: var(--accent-dark);
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.refurbishedCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- Trust strip ---------- */
+.trustSection {
+  padding: 2rem 1.25rem 3rem;
+  background: #fafafa;
+}
+
+.trustList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trustItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+
+.trustIcon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.trustText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.trustItemTitle {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.trustItemDesc {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.78rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ---------- Desktop centering ---------- */
+@media (min-width: 720px) {
+  .categoriesGrid,
+  .productListVertical,
+  .lightsGrid,
+  .trustList,
+  .refurbishedCard {
+    max-width: 680px;
+  }
+
+  .categoriesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .lightsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trustList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .categoriesGrid,
+  .productListVertical,
+  .lightsGrid,
+  .trustList,
+  .refurbishedCard {
+    max-width: 880px;
+  }
+
+  .productSection {
+    padding: 4rem 1.25rem 3rem;
+  }
+}
+
+/* ---------- About Us section ---------- */
+.aboutSection {
+  padding: 3.5rem 1.25rem 3rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.aboutInner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutText {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0 auto 2rem;
+  max-width: 520px;
+}
+
+.aboutValues {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+
+.aboutValue {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.85rem 1rem;
+  background: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  text-align: left;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.aboutValue:hover {
+  border-color: rgba(var(--accent-rgb), 0.25);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+.aboutValueIcon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.aboutValueTitle {
+  display: block;
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.15rem;
+}
+
+.aboutValueDesc {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.78rem;
+  color: #525252;
+  line-height: 1.5;
+}
+
+.aboutCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border: 1.5px solid rgba(var(--accent-dark-rgb), 0.25);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.aboutCta:hover {
+  background: rgba(var(--accent-rgb), 0.06);
+  border-color: rgba(var(--accent-dark-rgb), 0.5);
+  transform: translateY(-1px);
+}
+
+/* ---------- Trademark subtle badge ---------- */
+.trademarkSection {
+  padding: 0 1.25rem;
+  background: #ffffff;
+}
+
+.trademarkInner {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.trademarkBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.65rem 1.2rem;
+  background: linear-gradient(135deg, #fafafa, #f5f5f5);
+  border: 1px solid #e8e8e8;
+  border-radius: 999px;
+}
+
+.trademarkIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: var(--text-on-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  line-height: 1;
+  box-shadow: 0 2px 8px rgba(var(--accent-rgb), 0.2);
+}
+
+.trademarkInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.trademarkLabel {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: 0.02em;
+}
+
+.trademarkNumber {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.62rem;
+  color: #999;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Return policy highlight ---------- */
+.returnSection {
+  padding: 1.5rem 1.25rem 2rem;
+  background: #ffffff;
+}
+
+.returnCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background:
+    radial-gradient(ellipse at top left, rgba(var(--accent-rgb), 0.12) 0%, transparent 50%),
+    linear-gradient(160deg, #0f1923 0%, #0a1018 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.returnCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.returnIconWrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(var(--accent-rgb), 0.3);
+}
+
+.returnContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.returnTitle {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: clamp(1.1rem, 4vw, 1.35rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.returnDesc {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.55;
+  margin: 0;
+  max-width: none;
+}
+
+.returnCta {
+  display: inline-block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #ff8a7a;
+  text-decoration: none;
+  border: 1px solid rgba(255, 138, 122, 0.3);
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.returnCta:hover {
+  background: rgba(255, 138, 122, 0.1);
+  border-color: rgba(255, 138, 122, 0.55);
+}
+
+@media (min-width: 600px) {
+  .returnCard {
+    flex-direction: row;
+    text-align: left;
+    padding: 1.5rem 2rem;
+  }
+
+  .returnContent {
+    flex: 1;
+  }
+}
+
+@media (min-width: 720px) {
+  .aboutInner {
+    max-width: 680px;
+  }
+
+  .aboutValues {
+    flex-direction: row;
+    max-width: none;
+  }
+
+  .aboutValue {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1.1rem 0.9rem;
+  }
+
+  .returnCard {
+    max-width: 680px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .returnCard {
+    max-width: 880px;
+  }
+}
+
+/* ---------- Coming soon tiles ---------- */
+.categoryTileDisabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  filter: grayscale(0.85);
+  pointer-events: none;
+}
+
+.comingSoonBadge {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  background: rgba(26, 13, 24, 0.85);
+  color: #fff;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.comingSoonPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  background: linear-gradient(135deg, #f3f3f3 0%, #e8e8e8 100%);
+  color: #aaa;
+}

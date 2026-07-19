@@ -1,0 +1,240 @@
+{
+  "actions": {
+    "home": "Home",
+    "back": "Back",
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "send": "Send",
+    "retry": "Try again",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "backToProducts": "← Back to products",
+    "modify": "Edit"
+  },
+  "trademark": {
+    "label": "Designed with passion.",
+    "compact": "Acme Store® is a registered trademark — no. <strong>{regNumber}</strong> (trademark <strong>{markNumber}</strong>), valid until {expiresAt}. Holder: {holder}.",
+    "eyebrow": "Registered trademark",
+    "title": "Acme Store is a registered trademark",
+    "intro": "The <strong>Acme Store</strong> brand is a registered trademark. Use of the name, logo, or figurative elements visible on this site is protected by law.",
+    "labels": {
+      "holder": "Trademark holder",
+      "representative": "Representative",
+      "registrationNumber": "Registration number",
+      "registrationDate": "Registration date",
+      "trademarkNumber": "Trademark number",
+      "procedureCompleted": "Date of registration",
+      "type": "Trademark type",
+      "colors": "Claimed colours",
+      "viennaClasses": "Vienna classes",
+      "niceClasses": "Nice classes",
+      "registeredFrom": "Registered from",
+      "expiresAt": "Valid until"
+    }
+  },
+  "countdown": {
+    "days": "DAYS",
+    "hours": "HOURS",
+    "minutes": "MIN",
+    "seconds": "SEC"
+  },
+  "cookies": {
+    "title": "Cookie settings",
+    "intro": "We use cookies to remember your basket, show you personalised offers, and improve your shopping experience. Essential cookies are always active. For analytics and marketing, we ask for your consent.",
+    "customizeTitle": "Customise cookies",
+    "customizeIntro": "Choose the categories you'd like to enable. You can change your preferences at any time via the ",
+    "customizeIntroLink": "Cookie settings",
+    "customizeIntroSuffix": " link at the bottom of the page.",
+    "necessary": "Strictly necessary",
+    "necessaryDesc": "Required for the basket, authentication, and payment. Cannot be disabled.",
+    "alwaysOn": "Always on",
+    "analytics": "Analytics",
+    "analyticsDesc": "Google Analytics — helps us understand which products visitors are looking for.",
+    "marketing": "Marketing",
+    "marketingDesc": "Meta Pixel — measures ad performance and shows you relevant offers.",
+    "acceptAll": "Accept all",
+    "declineAll": "Decline all",
+    "customize": "Customise",
+    "savePreferences": "Save my preferences",
+    "settingsLink": "Cookie settings"
+  },
+  "categoryHeader": {
+    "furniture": {
+      "eyebrow": "FURNITURE",
+      "title": "Solid-wood furniture",
+      "subtitle": "Minimal, durable pieces in solid oak — nightstands, console tables and more for every room."
+    },
+    "lighting": {
+      "eyebrow": "LIGHTING",
+      "title": "Lighting collection",
+      "subtitle": "Table and floor lamps in glass, brass and marble — dimmable warm light for any space."
+    },
+    "outdoor": {
+      "eyebrow": "OUTDOOR",
+      "title": "Outdoor & garden",
+      "subtitle": "Solar-powered path and garden lighting — wire-free, weatherproof and easy to install."
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "heading": "Page not found",
+    "body": "The link you followed is incorrect, has expired, or the page has been moved. Let's get you back on track.",
+    "ctaHome": "Back to home",
+    "exploreLabel": "Or explore the collection",
+    "categories": {
+      "furniture": "Furniture",
+      "lighting": "Lighting",
+      "outdoor": "Outdoor"
+    }
+  },
+  "contact": {
+    "form": {
+      "intro": "Fill in the form and we'll get back to you promptly and helpfully.",
+      "firstName": "First name",
+      "firstNamePlaceholder": "First name",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Last name",
+      "email": "Email address",
+      "emailPlaceholder": "name@email.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+44 ...",
+      "subject": "Subject",
+      "subjectPlaceholder": "What would you like to ask us about?",
+      "message": "Message",
+      "messagePlaceholder": "Write your message…",
+      "submit": "Send",
+      "submitting": "Sending…",
+      "success": "✓ Thank you! Your message has been sent. We'll get back to you as soon as possible.",
+      "errorGeneric": "The message could not be sent.",
+      "errorNetwork": "Connection failed. Please try again."
+    }
+  },
+  "seo": {
+    "siteName": "Acme Store",
+    "titleTemplate": "%s — Acme Store",
+    "home": {
+      "title": "Spring Sale 2026 — Acme Store | Furniture, Lighting & Outdoor",
+      "description": "Spring Sale 2026 at Acme Store. Solid-wood furniture, table and floor lamps, plus wire-free solar outdoor lighting — genuine discounts and fast delivery."
+    },
+    "layout": {
+      "title": "Acme Store — Furniture, Lighting & Premium Outdoor",
+      "description": "Acme Store — premium home collection. Solid-wood furniture, decorative lighting, and solar outdoor lighting. Delivery to the UK.",
+      "ogTitle": "Acme Store — The collection for your home",
+      "ogDescription": "Solid-wood furniture, decorative lighting, and solar outdoor lighting.",
+      "keywords": "solid wood furniture, decorative lighting, table lamps, floor lamps, solar outdoor lighting, Acme Store"
+    },
+    "despreNoi": {
+      "title": "About us — Acme Store",
+      "description": "Acme Store — passionate about premium home products. Our team's mission, vision, and values."
+    },
+    "cumComand": {
+      "title": "How to order — Acme Store",
+      "description": "Step by step: how to choose a product, place an order, and track payment and delivery on shop.example.com."
+    },
+    "contact": {
+      "title": "Contact — Acme Store",
+      "description": "Let's talk. Send us a message and we'll get back to you quickly by email or phone."
+    },
+    "politicaRetur": {
+      "title": "Returns policy — Acme Store",
+      "description": "Acme Store returns policy: 14 days to return a product, conditions and steps to follow."
+    },
+    "politicaConfidentialitate": {
+      "title": "Privacy policy — Acme Store",
+      "description": "How we collect, process, and protect your personal data."
+    },
+    "termeniConditii": {
+      "title": "Terms and conditions — Acme Store",
+      "description": "Terms and conditions for using the site and purchasing Acme Store products."
+    },
+    "comanda": {
+      "title": "My basket — Acme Store",
+      "description": "Review the items in your basket and proceed to secure payment with Acme Store."
+    },
+    "checkout": {
+      "title": "Checkout — Acme Store",
+      "description": "Complete your Acme Store order — secure card payment and fast delivery."
+    },
+    "confirmare": {
+      "title": "Order confirmed — Acme Store"
+    },
+    "furniture": {
+      "title": "Furniture — Solid-wood collection",
+      "description": "Minimal solid-oak furniture — nightstands, console tables and more, built to last."
+    },
+    "lighting": {
+      "title": "Lighting — Lamps in glass, brass & marble",
+      "description": "Dimmable table and floor lamps with warm light for every room."
+    },
+    "outdoor": {
+      "title": "Outdoor — Solar garden lighting",
+      "description": "Wire-free solar path and garden lights — weatherproof and easy to install."
+    }
+  },
+  "confirmare": {
+    "orderNumberLabel": "Order number",
+    "infoTitle": "📦 What happens next?",
+    "default": {
+      "title": "Your order has been placed!",
+      "subtitle": "Thank you for your order. You will receive a confirmation email shortly."
+    },
+    "paid": {
+      "title": "Payment successful — thank you!",
+      "subtitle": "Your payment has been confirmed. We are preparing your parcel for dispatch.",
+      "line1": "Automatic payment confirmation received from the processor.",
+      "line2": "We will call you to confirm delivery.",
+      "line3": "Dispatched by courier within 24-48 working hours.",
+      "line4": "Your invoice and order details have been emailed to you."
+    },
+    "pending": {
+      "title": "Checking your payment...",
+      "subtitle": "Please wait a few seconds — we are confirming your payment with the processor.",
+      "line1": "We refresh the payment status automatically over the next ~30 seconds.",
+      "line2": "If you abandoned the payment, you can return to your basket and try again.",
+      "line3": "If the payment succeeds but you don't see the confirmation, email us at {email}."
+    },
+    "cancelled": {
+      "title": "Payment cancelled",
+      "subtitle": "Your order was not completed. You can try again at any time.",
+      "line1": "Your parcel was not dispatched.",
+      "line2": "No money was taken."
+    },
+    "failed": {
+      "title": "Payment failed",
+      "subtitle": "Your payment could not be processed. Please try a different payment method.",
+      "line1": "No money was taken.",
+      "lineRamburs": "You can choose cash on delivery as an alternative."
+    },
+    "refunded": {
+      "title": "Your order has been refunded",
+      "subtitle": "Your payment has been returned. The amount will appear in your account within a few working days.",
+      "line1": "Your parcel will not be dispatched (or has already been recovered).",
+      "line2": "For questions about the refund, email us at {email}."
+    },
+    "received": {
+      "line1": "Your order has been registered and sent to our team.",
+      "line2": "We will call you to confirm your order.",
+      "line3": "Dispatched by courier within 24-48 working hours.",
+      "line4": "Payment is made by cash on delivery, when your parcel arrives."
+    },
+    "unknown": {
+      "line1": "Your order has been registered.",
+      "line2": "If you don't receive a confirmation shortly, email us at {email}."
+    },
+    "actions": {
+      "viewOrders": "View my orders",
+      "moreProducts": "Browse more products",
+      "backHome": "Back to the homepage"
+    },
+    "contact": {
+      "prompt": "Questions? Message us on",
+      "linkLabel": "WhatsApp",
+      "suffix": "— we reply within 15 minutes."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "email": {
+    "close": "Închide",
+    "badge": "🎁 OFERTĂ EXCLUSIVĂ",
+    "title": "-{percent}%",
+    "subtitleAfter": "la prima ta comandă",
+    "subtitle": "Introdu adresa ta de email pentru a salva reducerea automată de <strong>{percent}%</strong> la prima comandă și pentru a completa checkout-ul mai rapid.",
+    "placeholder": "adresa@email.com",
+    "submit": "Vreau reducerea de {percent}% →",
+    "hint": "Nu trimitem spam. Poți să te dezabonezi oricând.",
+    "successTitle": "Mulțumim! 🎉",
+    "successSubtitle": "Reducerea de bun venit se aplică automat la checkout, iar emailul tău a fost salvat pentru completare rapidă.",
+    "errorInvalidEmail": "Introdu o adresă de email validă."
+  },
+  "exitIntent": {
+    "close": "Închide",
+    "badge": "{percent}% reducere",
+    "title": "Nu plecai fără coșul tău, nu?",
+    "copyPrimary": "🤝 Prima impresie contează! Îți dăm <strong>{percent}%</strong> ca să vezi cum lucrăm!",
+    "copySecondary": "🎁 Introdu e-mailul și deblochează reducerea ta. Avem garanții, retur gratuit (14 zile) și răspundem prompt la telefon!",
+    "placeholder": "Introdu aici adresa ta de email!",
+    "submit": "Salvează",
+    "successTitle": "Mulțumim! 🎉",
+    "successCopy": "Reducerea de {percent}% se aplică automat la următoarea ta comandă.",
+    "errorInvalidEmail": "Introdu o adresă de email validă."
+  },
+  "newsletter": {
+    "firstNamePlaceholder": "Prenume",
+    "firstNameAria": "Prenume",
+    "lastNamePlaceholder": "Nume",
+    "lastNameAria": "Nume",
+    "emailPlaceholder": "Email",
+    "emailAria": "Email",
+    "submit": "Send",
+    "submitting": "...",
+    "success": "✓ Mulțumim",
+    "error": "Te rugăm să introduci un email valid."
+  }
+}

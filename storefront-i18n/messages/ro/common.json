@@ -1,0 +1,240 @@
+{
+  "actions": {
+    "home": "Acasă",
+    "back": "Înapoi",
+    "continue": "Continuă",
+    "cancel": "Anulează",
+    "close": "Închide",
+    "save": "Salvează",
+    "edit": "Modifică",
+    "delete": "Șterge",
+    "send": "Trimite",
+    "retry": "Reîncearcă",
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "success": "Succes",
+    "backToProducts": "← Înapoi la produse",
+    "modify": "Modifică"
+  },
+  "trademark": {
+    "label": "Made with love in Romania.",
+    "compact": "Acme Store® este marcă înregistrată — depozit OSIM nr. <strong>{regNumber}</strong> (marca <strong>{markNumber}</strong>), valabilă până la {expiresAt}. Titular: {holder}.",
+    "eyebrow": "Marcă înregistrată",
+    "title": "Acme Store este o marcă înregistrată la OSIM",
+    "intro": "Marca <strong>Acme Store</strong> este înregistrată la Oficiul de Stat pentru Invenții și Mărci (OSIM) din România. Folosirea numelui, logo-ului sau a elementelor figurative pe care le vezi pe acest site este protejată legal.",
+    "labels": {
+      "holder": "Titular marcă",
+      "representative": "Mandatar",
+      "registrationNumber": "Număr depozit",
+      "registrationDate": "Data depozit",
+      "trademarkNumber": "Număr marcă",
+      "procedureCompleted": "Data înregistrării",
+      "type": "Tipul mărcii",
+      "colors": "Culori revendicate",
+      "viennaClasses": "Clase Viena",
+      "niceClasses": "Clase Nisa",
+      "registeredFrom": "Înregistrată de la",
+      "expiresAt": "Valabilă până la"
+    }
+  },
+  "countdown": {
+    "days": "ZILE",
+    "hours": "ORE",
+    "minutes": "MIN",
+    "seconds": "SEC"
+  },
+  "cookies": {
+    "title": "Setări cookie",
+    "intro": "Folosim cookie-uri pentru a-ți reține coșul, a-ți oferi promoții personalizate și a îmbunătăți magazinul. Cookie-urile esențiale sunt mereu active. Pentru analiză și marketing îți cerem acordul.",
+    "customizeTitle": "Personalizează cookie-urile",
+    "customizeIntro": "Alege ce categorii sunt active. Poți schimba oricând din linkul ",
+    "customizeIntroLink": "Setări cookie",
+    "customizeIntroSuffix": " din subsol.",
+    "necessary": "Esențiale",
+    "necessaryDesc": "Necesare pentru coș, autentificare și plată. Nu pot fi dezactivate.",
+    "alwaysOn": "Mereu active",
+    "analytics": "Analiză",
+    "analyticsDesc": "Google Analytics — ne ajută să vedem ce produse caută vizitatorii.",
+    "marketing": "Marketing",
+    "marketingDesc": "Meta Pixel — măsurăm performanța reclamelor și îți arătăm oferte relevante.",
+    "acceptAll": "Acceptă tot",
+    "declineAll": "Refuză",
+    "customize": "Personalizează",
+    "savePreferences": "Salvează preferințele",
+    "settingsLink": "Setări cookie"
+  },
+  "categoryHeader": {
+    "furniture": {
+      "eyebrow": "MOBILIER",
+      "title": "Mobilier din lemn masiv",
+      "subtitle": "Piese minimaliste și durabile din stejar masiv pentru orice cameră."
+    },
+    "lighting": {
+      "eyebrow": "ILUMINAT",
+      "title": "Colecția de iluminat",
+      "subtitle": "Lămpi de masă și lampadare din sticlă, alamă și marmură — lumină caldă dimabilă pentru orice spațiu."
+    },
+    "outdoor": {
+      "eyebrow": "EXTERIOR",
+      "title": "Exterior și grădină",
+      "subtitle": "Iluminat solar de alee și grădină — fără fire, rezistent la intemperii și ușor de instalat."
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "heading": "Pagina nu a fost găsită",
+    "body": "Linkul pe care l-ai accesat este greșit, a expirat sau pagina a fost mutată. Hai să te aducem înapoi pe drumul bun.",
+    "ctaHome": "Înapoi acasă",
+    "exploreLabel": "Sau explorează colecția",
+    "categories": {
+      "furniture": "Mobilier",
+      "lighting": "Iluminat",
+      "outdoor": "Exterior"
+    }
+  },
+  "contact": {
+    "form": {
+      "intro": "Completează formularul și revenim cu un răspuns prompt și la subiect.",
+      "firstName": "Prenume",
+      "firstNamePlaceholder": "Prenume",
+      "lastName": "Nume",
+      "lastNamePlaceholder": "Nume",
+      "email": "Adresă de email",
+      "emailPlaceholder": "exemplu@email.ro",
+      "phone": "Număr de telefon",
+      "phonePlaceholder": "+40 ...",
+      "subject": "Subiect",
+      "subjectPlaceholder": "Despre ce ne scrii?",
+      "message": "Mesaj",
+      "messagePlaceholder": "Scrie-ne mesajul tău...",
+      "submit": "Trimite",
+      "submitting": "Se trimite…",
+      "success": "✓ Mulțumim! Mesajul a fost trimis. Revenim în cel mai scurt timp.",
+      "errorGeneric": "Mesajul nu a putut fi trimis.",
+      "errorNetwork": "Conexiune eșuată. Încearcă din nou."
+    }
+  },
+  "seo": {
+    "siteName": "Acme Store",
+    "titleTemplate": "%s — Acme Store",
+    "home": {
+      "title": "Spring Sale 2026 — Acme Store | Mobilier, Iluminat și Exterior",
+      "description": "Spring Sale 2026 la Acme Store. Mobilier din lemn masiv, lămpi de masă și lampadare, plus iluminat solar de exterior — toate cu reduceri reale și livrare rapidă."
+    },
+    "layout": {
+      "title": "Acme Store — Mobilier, Iluminat și Exterior Premium",
+      "description": "Acme Store — colecție premium pentru locuință. Mobilier din lemn masiv, iluminat decorativ și iluminat solar de exterior. Livrare în România.",
+      "ogTitle": "Acme Store — Colecția pentru casa ta",
+      "ogDescription": "Mobilier din lemn masiv, iluminat decorativ și iluminat solar de exterior.",
+      "keywords": "mobilier lemn masiv, iluminat decorativ, lămpi de masă, lampadare, iluminat solar exterior, Acme Store"
+    },
+    "despreNoi": {
+      "title": "Despre noi — Acme Store",
+      "description": "Acme Store — pasionați de produse premium pentru locuință. Misiune, viziune și valorile echipei."
+    },
+    "cumComand": {
+      "title": "Cum comand? — Acme Store",
+      "description": "Pas cu pas: cum alegi produsul, cum plasezi comanda și cum se desfășoară plata și livrarea pe ro.shop.example.com."
+    },
+    "contact": {
+      "title": "Contact — Acme Store",
+      "description": "Hai să discutăm. Trimite-ne un mesaj și revenim cu un răspuns prompt prin email sau telefon."
+    },
+    "politicaRetur": {
+      "title": "Politica de retur — Acme Store",
+      "description": "Politica de retur Acme Store: 14 zile pentru returnare, condiții și pașii de urmat."
+    },
+    "politicaConfidentialitate": {
+      "title": "Politica de confidențialitate — Acme Store",
+      "description": "Cum colectăm, prelucrăm și protejăm datele dumneavoastră cu caracter personal pe ro.shop.example.com."
+    },
+    "termeniConditii": {
+      "title": "Termeni și condiții — Acme Store",
+      "description": "Termenii și condițiile de utilizare a site-ului ro.shop.example.com și de cumpărare a produselor Acme Store."
+    },
+    "comanda": {
+      "title": "Coșul meu — Acme Store",
+      "description": "Verifică produsele din coș și continuă către plata securizată Acme Store."
+    },
+    "checkout": {
+      "title": "Finalizare comandă — Acme Store",
+      "description": "Finalizează comanda Acme Store — plată cu cardul sau ramburs, livrare rapidă."
+    },
+    "confirmare": {
+      "title": "Comandă confirmată — Acme Store"
+    },
+    "furniture": {
+      "title": "Mobilier — Colecție din lemn masiv",
+      "description": "Mobilier minimalist din stejar masiv, făcut să dureze."
+    },
+    "lighting": {
+      "title": "Iluminat — Lămpi din sticlă, alamă și marmură",
+      "description": "Lămpi de masă și lampadare dimabile cu lumină caldă pentru orice cameră."
+    },
+    "outdoor": {
+      "title": "Exterior — Iluminat solar de grădină",
+      "description": "Iluminat solar de alee și grădină, fără fire — rezistent la intemperii și ușor de instalat."
+    }
+  },
+  "confirmare": {
+    "orderNumberLabel": "Număr comandă",
+    "infoTitle": "📦 Ce urmează?",
+    "default": {
+      "title": "Comanda ta a fost plasată!",
+      "subtitle": "Mulțumim pentru comandă. Vei primi un email de confirmare în scurt timp."
+    },
+    "paid": {
+      "title": "Plata reușită — mulțumim!",
+      "subtitle": "Plata a fost confirmată. Pregătim coletul pentru livrare.",
+      "line1": "Confirmare automată a plății primită de la procesator.",
+      "line2": "Vei fi contactat(ă) telefonic pentru a confirma livrarea.",
+      "line3": "Livrare prin curier în 24-48 ore lucrătoare.",
+      "line4": "Ai primit pe email factura și detaliile comenzii."
+    },
+    "pending": {
+      "title": "Verificăm plata...",
+      "subtitle": "Așteaptă câteva secunde — confirmăm plata cu procesatorul.",
+      "line1": "Reîmprospătăm automat starea plății în următoarele ~30 de secunde.",
+      "line2": "Dacă ai abandonat plata, poți reveni la coș și încerca din nou.",
+      "line3": "Dacă plata reușește dar nu vezi confirmarea, scrie-ne pe WhatsApp."
+    },
+    "cancelled": {
+      "title": "Plata a fost anulată",
+      "subtitle": "Comanda nu a fost finalizată. Poți reîncerca oricând.",
+      "line1": "Coletul nu a fost expediat.",
+      "line2": "Nu ți s-au reținut bani."
+    },
+    "failed": {
+      "title": "Plata a eșuat",
+      "subtitle": "Plata nu a putut fi procesată. Te rugăm să încerci o altă metodă de plată.",
+      "line1": "Nu ți s-au reținut bani.",
+      "lineRamburs": "Poți alege ramburs (plata la livrare) ca alternativă."
+    },
+    "refunded": {
+      "title": "Comanda a fost rambursată",
+      "subtitle": "Plata a fost returnată. Suma va apărea în contul tău în câteva zile lucrătoare.",
+      "line1": "Coletul nu va fi expediat (sau a fost deja recuperat).",
+      "line2": "Pentru întrebări despre rambursare, scrie-ne pe WhatsApp."
+    },
+    "received": {
+      "line1": "Comanda ta a fost înregistrată și trimisă echipei noastre.",
+      "line2": "Vei fi contactat(ă) telefonic pentru confirmarea comenzii.",
+      "line3": "Livrare prin curier în 24-48 ore lucrătoare.",
+      "line4": "Plata se face ramburs, la primirea coletului."
+    },
+    "unknown": {
+      "line1": "Comanda ta a fost înregistrată.",
+      "line2": "Dacă nu primești confirmare în scurt timp, scrie-ne pe WhatsApp."
+    },
+    "actions": {
+      "viewOrders": "Vezi comenzile mele",
+      "moreProducts": "Vezi mai multe produse",
+      "backHome": "Înapoi la pagina principală"
+    },
+    "contact": {
+      "prompt": "Întrebări? Scrie-ne pe",
+      "linkLabel": "WhatsApp",
+      "suffix": "— răspundem în maxim 15 minute."
+    }
+  }
+}

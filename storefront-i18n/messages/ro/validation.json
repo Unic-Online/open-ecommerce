@@ -1,0 +1,17 @@
+{
+  "firstNameRequired": "Prenumele este obligatoriu",
+  "lastNameRequired": "Numele este obligatoriu",
+  "emailInvalid": "Email invalid",
+  "phoneInvalid": "Telefon invalid",
+  "countyRequired": "Județul este obligatoriu",
+  "cityRequired": "Orașul este obligatoriu",
+  "addressRequired": "Adresa este obligatorie",
+  "countryRequired": "Țara este obligatorie",
+  "postalCodeRequired": "Codul poștal este obligatoriu",
+  "companyNameRequired": "Numele firmei este obligatoriu",
+  "companyCuiRequired": "CUI este obligatoriu",
+  "companyRegComRequired": "Nr. Reg. Com. este obligatoriu",
+  "altAddressRequired": "Adresa de livrare este obligatorie",
+  "couponInvalid": "Cod de reducere invalid",
+  "orderItemsRequired": "Comanda trebuie să conțină cel puțin un produs"
+}

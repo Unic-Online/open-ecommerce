@@ -1,0 +1,67 @@
+.springBanner {
+  background:
+    radial-gradient(ellipse at center top, rgba(var(--accent-rgb), 0.35) 0%, transparent 60%),
+    linear-gradient(180deg, #1a0d18 0%, #0f0810 100%);
+  padding: 3rem 1.25rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.springBanner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(var(--accent-rgb), 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(var(--accent-rgb), 0.10) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.springInner {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.springTitle {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 11vw, 4.8rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    #ffeaf2 0%,
+    #ff8a7a 35%,
+    var(--glow-turquoise) 65%,
+    var(--accent-dark) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: 0 2px 30px rgba(var(--accent-rgb), 0.3);
+}
+
+.springSub {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 0 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  max-width: 420px;
+}
+
+@media (min-width: 1024px) {
+  .springBanner {
+    padding: 4rem 1.25rem 3.5rem;
+  }
+}

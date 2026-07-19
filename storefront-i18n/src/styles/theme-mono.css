@@ -1,0 +1,116 @@
+/* ============================================================
+   Acme Store — Theme: Minimal Monochrome
+   ============================================================
+   Drop-in replacement for theme.css.
+   Swap the @import in globals.css to activate:
+     @import '../styles/theme-mono.css';
+
+   Palette: near-black accent on neutral light grays.
+   Every token that exists in theme.css is defined here.
+   ============================================================ */
+
+:root {
+  /* 1. Backgrounds */
+  --bg-deep: #f2f2f2;
+  --bg-card: rgba(255, 255, 255, 0.90);
+  --bg-card-hover: rgba(255, 255, 255, 0.98);
+  --bg-surface: #e8e8e8;
+  --bg-elevated: #ffffff;
+
+  /* 2. Accent colors — near-black / charcoal palette */
+  --glow-turquoise: #1a1a1a;         /* near-black — primary accent */
+  --glow-blue: #2a4a7a;              /* deep navy */
+  --glow-green: #1f5c3a;             /* dark forest */
+  --glow-violet: #3d2e5a;            /* dark plum */
+  --glow-turquoise-dim: rgba(26, 26, 26, 0.08);
+  --glow-blue-dim: rgba(42, 74, 122, 0.08);
+  --glow-green-dim: rgba(31, 92, 58, 0.08);
+  --glow-gold: #5a4a00;
+  --glow-gold-dim: rgba(90, 74, 0, 0.08);
+
+  /* RGB channels for rgba() alpha variants */
+  --accent-rgb: 26, 26, 26;          /* near-black */
+  --accent-dark-rgb: 0, 0, 0;        /* pure black */
+
+  /* Accent dark (gradient end-stop, hover tint) */
+  --accent-dark: #000000;
+
+  /* 3. Text */
+  --text-primary: #111111;
+  --text-secondary: #444444;
+  --text-muted: #888888;
+  --text-accent: var(--glow-turquoise);
+
+  /* 4. Price comparison */
+  --price-old: #666666;
+  --price-new: #111111;
+
+  /* 5. Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+
+  /* 6. Typography */
+  --font-display: var(--font-jost), system-ui, sans-serif;
+  --font-body: var(--font-jost), system-ui, sans-serif;
+
+  /* 7. Borders & Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* 8. Shadows */
+  --shadow-glow-turquoise: 0 2px 12px rgba(var(--accent-rgb), 0.10);
+  --shadow-glow-blue: 0 2px 12px rgba(42, 74, 122, 0.10);
+  --shadow-glow-green: 0 2px 12px rgba(31, 92, 58, 0.10);
+  --shadow-glow-gold: 0 2px 12px rgba(90, 74, 0, 0.10);
+
+  /* 9. Layout */
+  --max-width: 1200px;
+  --content-padding: 1.25rem;
+
+  /* 10. Borders (alpha) */
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-medium: rgba(0, 0, 0, 0.15);
+  --overlay-bg: rgba(0, 0, 0, 0.4);
+
+  /* 11. Primary button */
+  --gradient-primary: linear-gradient(135deg, #333333, #000000);
+  --text-on-primary: #ffffff;
+  --shadow-primary: 0 4px 20px rgba(var(--accent-rgb), 0.25);
+  --shadow-primary-hover: 0 8px 30px rgba(var(--accent-rgb), 0.38);
+
+  /* 12. Mobile drawer surface */
+  --bg-drawer: #ffffff;
+
+  /* 13. WhatsApp button */
+  --whatsapp-start: #25D366;
+  --whatsapp-end: #128C7E;
+  --whatsapp-rgb: 37, 211, 102;
+  --gradient-whatsapp: linear-gradient(135deg, var(--whatsapp-start), var(--whatsapp-end));
+  --shadow-whatsapp: 0 4px 20px rgba(var(--whatsapp-rgb), 0.3);
+  --shadow-whatsapp-hover: 0 8px 30px rgba(var(--whatsapp-rgb), 0.45);
+
+  /* 14. Star rating */
+  --star-color: #b8860b;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --content-padding: 2rem;
+    --space-xl: 5rem;
+    --space-2xl: 7rem;
+    --space-3xl: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --content-padding: 3rem;
+  }
+}

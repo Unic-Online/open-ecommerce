@@ -1,0 +1,116 @@
+/* ============================================================
+   Acme Store — Theme: Warm Amber Luxury
+   ============================================================
+   Drop-in replacement for theme.css.
+   Swap the @import in globals.css to activate:
+     @import '../styles/theme-warm.css';
+
+   Palette: amber/bronze accent on warm off-white backgrounds.
+   Every token that exists in theme.css is defined here.
+   ============================================================ */
+
+:root {
+  /* 1. Backgrounds */
+  --bg-deep: #f7f4ef;
+  --bg-card: rgba(255, 252, 245, 0.90);
+  --bg-card-hover: rgba(255, 254, 249, 0.97);
+  --bg-surface: #efe9df;
+  --bg-elevated: #fffdf8;
+
+  /* 2. Accent colors — warm amber/bronze palette */
+  --glow-turquoise: #b87333;         /* bronze amber — primary accent */
+  --glow-blue: #5c6bc0;              /* muted indigo */
+  --glow-green: #4a7c59;             /* forest green */
+  --glow-violet: #7b5ea7;            /* soft plum */
+  --glow-turquoise-dim: rgba(184, 115, 51, 0.1);
+  --glow-blue-dim: rgba(92, 107, 192, 0.1);
+  --glow-green-dim: rgba(74, 124, 89, 0.1);
+  --glow-gold: #c8920a;
+  --glow-gold-dim: rgba(200, 146, 10, 0.1);
+
+  /* RGB channels for rgba() alpha variants */
+  --accent-rgb: 184, 115, 51;        /* bronze */
+  --accent-dark-rgb: 139, 80, 24;    /* deep bronze */
+
+  /* Accent dark (gradient end-stop, hover tint) */
+  --accent-dark: #8b5018;
+
+  /* 3. Text */
+  --text-primary: #1c1610;
+  --text-secondary: #4a3f32;
+  --text-muted: #8a7a68;
+  --text-accent: var(--glow-turquoise);
+
+  /* 4. Price comparison */
+  --price-old: #6b5d50;
+  --price-new: #8b5018;
+
+  /* 5. Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+
+  /* 6. Typography */
+  --font-display: var(--font-jost), system-ui, sans-serif;
+  --font-body: var(--font-jost), system-ui, sans-serif;
+
+  /* 7. Borders & Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* 8. Shadows */
+  --shadow-glow-turquoise: 0 2px 12px rgba(var(--accent-rgb), 0.14);
+  --shadow-glow-blue: 0 2px 12px rgba(92, 107, 192, 0.12);
+  --shadow-glow-green: 0 2px 12px rgba(74, 124, 89, 0.12);
+  --shadow-glow-gold: 0 2px 12px rgba(200, 146, 10, 0.12);
+
+  /* 9. Layout */
+  --max-width: 1200px;
+  --content-padding: 1.25rem;
+
+  /* 10. Borders (alpha) */
+  --border-subtle: rgba(0, 0, 0, 0.07);
+  --border-medium: rgba(0, 0, 0, 0.12);
+  --overlay-bg: rgba(10, 6, 2, 0.35);
+
+  /* 11. Primary button */
+  --gradient-primary: linear-gradient(135deg, var(--glow-turquoise), var(--accent-dark));
+  --text-on-primary: #ffffff;
+  --shadow-primary: 0 4px 20px rgba(var(--accent-rgb), 0.32);
+  --shadow-primary-hover: 0 8px 30px rgba(var(--accent-rgb), 0.48);
+
+  /* 12. Mobile drawer surface */
+  --bg-drawer: #fffdf8;
+
+  /* 13. WhatsApp button */
+  --whatsapp-start: #25D366;
+  --whatsapp-end: #128C7E;
+  --whatsapp-rgb: 37, 211, 102;
+  --gradient-whatsapp: linear-gradient(135deg, var(--whatsapp-start), var(--whatsapp-end));
+  --shadow-whatsapp: 0 4px 20px rgba(var(--whatsapp-rgb), 0.3);
+  --shadow-whatsapp-hover: 0 8px 30px rgba(var(--whatsapp-rgb), 0.45);
+
+  /* 14. Star rating */
+  --star-color: #d4930a;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --content-padding: 2rem;
+    --space-xl: 5rem;
+    --space-2xl: 7rem;
+    --space-3xl: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --content-padding: 3rem;
+  }
+}
